@@ -1,1 +1,1 @@
-Updated README with project status: All sections generated. View at GitHub Pages. Embed index.html on GoDaddy.
+Updated with status: Main index with full dynamic TOC pushed for GitHub Pages. Section HTMLs for first batches generated locally and can be pushed. Custom domain setup in progress. See index.html for the embeddable version for GoDaddy (use the static abbreviated one for embed if the full JS doesn't render well in GoDaddy).
