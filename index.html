@@ -15,7 +15,7 @@
     }
 
     body {
-      font-family: 'Inter', system_ui, -apple-system, sans-serif;
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
     }
 
     .font-display {
@@ -513,17 +513,23 @@
       renderTOC();
       setupKeyboard();
 
+      // Optional: pre-populate a subtle example in search (commented)
+      // document.getElementById('search-input').placeholder = "Search sections... (press / to focus)";
+
       // Show initial count accurately
       const container = document.getElementById('toc');
       if (container.dataset.total) {
         // already set in render
       }
 
-      console.log('%c[BGE] Full dynamic index initialized on GitHub Pages.', 'color:#64748b');
+      // Bonus: make entire page feel premium
+      console.log('%c[BGE] Beautiful self-contained index initialized. Ready for embed.', 'color:#64748b');
     }
 
+    // Boot
     window.onload = initialize;
 
+    // Expose for debugging / future enhancement
     window.BGE_TOC = { filter: filterSections, data: () => tocData };
   </script>
 </body>
