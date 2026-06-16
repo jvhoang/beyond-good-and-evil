@@ -1,1 +1,374 @@
-[the full index.html code from earlier read, with these modifications inserted: 1. After the search div or in hero, add a yellow/amber banner div: '98 full presentations live with extensive summaries + complete Grok Imagine slide prompts & descriptions. Slide images not yet visible: drag the entire local bge_analysis/images/ folder into the repo root as a new "images/" directory using GitHub's web UI (Add file > Upload files). Refresh after upload. More sections (gaps + 111-297) coming soon with the same full treatment.' 2. In the <script>, after const tocData = [...]; add: const availableSections = new Set(["000","001",...,"110"]); (exact from ls). 3. In the groupData.items.forEach, before creating the <a> card: const isAvailable = availableSections.has(item.padded); then if(isAvailable){ card.href = `https://jvhoang.github.io/.../sections/${item.padded}.html`; card.target=...; innerHTML with normal OPEN } else { card.className += ' opacity-60 cursor-not-allowed'; card.innerHTML = `... §padded + short + <div class="text-[9px] ... text-amber-400/70">COMING SOON — full Grok Imagine 5-slide presentation + detailed summary in progress</div>` ; no href. } Update the results count to dynamically show live vs total or hardcode '98 live full presentations • 200+ coming soon with Grok Imagine slides'. 4. Keep all other styling and functionality. ]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beyond Good and Evil • Graphical Presentations | Final Worth</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&amp;family=Inter:wght@300;400;500;600&amp;family=Space+Grotesk:wght@500;600&amp;display=swap');
+
+    :root {
+      --gold: #d4af37;
+      --emerald: #10b981;
+    }
+
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    }
+
+    .font-display {
+      font-family: 'Playfair Display', 'Space Grotesk', Georgia, serif;
+      font-weight: 700;
+    }
+
+    .font-mono-num {
+      font-variant-numeric: tabular-nums;
+    }
+
+    .academic-bg {
+      background: #0a0f1c;
+      background-image: 
+        radial-gradient(circle at 25% 20%, rgba(212, 175, 55, 0.03) 0%, transparent 50%),
+        radial-gradient(circle at 75% 80%, rgba(16, 185, 129, 0.025) 0%, transparent 50%);
+    }
+
+    .section-card {
+      background: #111827;
+      border: 1px solid #1f2937;
+      transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .section-card:hover {
+      border-color: #d4af37;
+      box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.3), 0 4px 6px -4px rgb(0 0 0 / 0.3);
+      transform: translateY(-2px);
+    }
+
+    .gold-accent {
+      color: #d4af37;
+    }
+
+    .emerald-accent {
+      color: #10b981;
+    }
+
+    .part-header {
+      font-family: 'Playfair Display', Georgia, serif;
+      letter-spacing: -0.02em;
+    }
+
+    .toc-card {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.875rem;
+    }
+
+    .search-input {
+      transition: all 0.2s ease;
+    }
+
+    .search-input:focus {
+      border-color: #d4af37;
+      box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
+      outline: none;
+    }
+
+    .section-num {
+      font-family: 'Space Grotesk', ui-monospace, monospace;
+      font-weight: 600;
+      letter-spacing: -0.5px;
+    }
+
+    .group-title {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 1.25rem;
+      letter-spacing: -0.025em;
+    }
+
+    .filter-hidden {
+      display: none !important;
+    }
+
+    .stat-pill {
+      background: rgba(16, 185, 129, 0.1);
+      border: 1px solid rgba(16, 185, 129, 0.2);
+    }
+
+    .elegant-divider {
+      height: 1px;
+      background: linear-gradient(to right, transparent, #334155, transparent);
+    }
+
+    .card-short {
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body class="academic-bg text-slate-200 min-h-screen">
+  <!-- Top bar -->
+  <div class="border-b border-slate-800 bg-[#0a0f1c]/95 backdrop-blur-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-x-3">
+        <div class="w-9 h-9 rounded-full bg-gradient-to-br from-amber-400 to-yellow-600 flex items-center justify-center">
+          <i class="fa-solid fa-book text-[#0a0f1c] text-xl"></i>
+        </div>
+        <div>
+          <div class="font-display text-2xl tracking-tighter text-white">Beyond Good and Evil</div>
+          <div class="text-[10px] text-slate-400 -mt-1">FRIEDRICH NIETZSCHE • WALTER KAUFMANN TRANSLATION</div>
+        </div>
+      </div>
+      <div class="hidden md:flex items-center gap-x-4 text-sm">
+        <a href="https://jvhoang.github.io/beyond-good-and-evil/" target="_blank" 
+           class="px-4 py-1.5 rounded-full border border-slate-700 hover:border-amber-400/70 hover:text-amber-400 transition-colors flex items-center gap-x-2 text-sm">
+          <i class="fa-solid fa-external-link-alt text-xs"></i>
+          <span>GitHub Pages</span>
+        </a>
+        <a href="https://github.com/jvhoang/beyond-good-and-evil" target="_blank"
+           class="px-4 py-1.5 rounded-full bg-slate-900 border border-slate-700 hover:bg-slate-800 transition-colors flex items-center gap-x-2 text-sm">
+          <i class="fa-brands fa-github"></i>
+          <span>Repository</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-6 pt-10 pb-16">
+    <!-- Hero / Title -->
+    <div class="max-w-4xl mb-10">
+      <div class="inline-flex items-center gap-x-2 px-3 py-1 rounded-full bg-slate-900 border border-slate-700 text-xs tracking-[1.5px] font-medium text-amber-400 mb-4">
+        <i class="fa-solid fa-scroll"></i>
+        <span>PRELUDE TO A PHILOSOPHY OF THE FUTURE</span>
+      </div>
+      
+      <h1 class="font-display text-6xl md:text-7xl tracking-tighter leading-[1.05] text-white mb-3">
+        Beyond Good<br>and Evil
+      </h1>
+      <p class="text-2xl text-slate-400 tracking-tight">Graphical Presentations of the 296 Sections</p>
+    </div>
+
+    <!-- Intro -->
+    <div class="max-w-3xl mb-10 text-[15px] leading-relaxed text-slate-300">
+      <p class="mb-4">
+        Friedrich Nietzsche’s <em>Beyond Good and Evil: Prelude to a Philosophy of the Future</em> (1886) is one of the most profound and provocative works in Western philosophy. In it, Nietzsche dismantles the prejudices of traditional philosophers, explores the psychology of religion and morality, celebrates the “free spirit,” and points toward a new nobility of the future.
+      </p>
+      <p class="mb-4">
+        This edition uses the celebrated translation by <strong>Walter Kaufmann</strong>, long regarded as the definitive English rendering for its precision, elegance, and fidelity to Nietzsche’s voice.
+      </p>
+      <p>
+        These <strong>graphical presentations</strong> distill each section—along with the Preface and the concluding poem “From High Mountains: Aftersong”—into self-contained, visually rich, PowerPoint-style experiences. Each features incisive summaries, key quotations, thematic analysis, and custom-generated imagery designed to make Nietzsche’s dense aphoristic prose accessible, memorable, and inspiring for contemporary readers and students.
+      </p>
+    </div>
+
+    <!-- Search -->
+    <div class="mb-8">
+      <div class="relative max-w-2xl">
+        <div class="absolute inset-y-0 left-0 pl-5 flex items-center pointer-events-none">
+          <i class="fa-solid fa-search text-slate-500 text-lg"></i>
+        </div>
+        <input 
+          id="search-input" 
+          type="text" 
+          placeholder="Search by number, keyword, or aphorism content (e.g. 63, truth, noble, free spirit...)" 
+          class="search-input w-full bg-[#0f172a] border border-slate-700 focus:border-amber-400/70 text-white placeholder:text-slate-500 rounded-2xl pl-14 pr-6 py-4 text-lg shadow-inner"
+          onkeyup="filterSections()"
+          autocomplete="off">
+        <div class="absolute right-5 top-1/2 -translate-y-1/2 text-xs px-3 py-1 bg-slate-800 border border-slate-700 rounded-full text-slate-400 font-mono hidden sm:block">
+          LIVE FILTER
+        </div>
+      </div>
+      <div class="mt-2 text-xs text-slate-500 flex items-center gap-x-2 pl-1">
+        <span id="results-count">98 live full presentations • 200+ coming soon with Grok Imagine slides</span>
+      </div>
+    </div>
+
+    <!-- Banner for images -->
+    <div class="mb-8 p-4 bg-amber-900/30 border border-amber-400/50 rounded-2xl text-sm text-amber-200">
+      <strong>Slide images update:</strong> A number of Grok Imagine .jpg files have been uploaded to the repo root. For best organization, create an <code>images/</code> folder and move them there (or re-upload with the folder path). The pages will then show the beautiful slides. Prompts for every slide are always visible below the image areas.
+    </div>
+
+    <!-- TOC -->
+    <div id="toc" class="mb-12"></div>
+
+    <!-- Instructions -->
+    <div class="max-w-4xl mx-auto">
+      <div class="bg-[#0f172a] border border-slate-700 rounded-3xl p-8 md:p-10">
+        <div class="flex items-center gap-x-3 mb-5">
+          <i class="fa-solid fa-globe text-emerald-400 text-2xl"></i>
+          <h2 class="text-2xl font-semibold tracking-tight text-white">Embedding on GoDaddy / finalworth.com</h2>
+        </div>
+        
+        <div class="prose prose-invert text-slate-300 max-w-none text-[15px]">
+          <p class="mb-4">Copy this entire HTML into a <strong>Custom HTML section</strong> on your finalworth.com/beyond-good-and-evil page.</p>
+          <p class="mb-4">For the full interactive presentations, the links point to the live GitHub Pages version at <code class="bg-slate-800 px-1.5 py-0.5 rounded text-amber-300 text-sm">https://jvhoang.github.io/beyond-good-and-evil/sections/XXX.html</code>.</p>
+          <div class="text-sm bg-slate-900/70 border border-slate-700 rounded-2xl p-4 font-light">
+            The single-file design ensures it renders beautifully anywhere an HTML embed is supported. Update the GitHub Pages site whenever new section presentations are added.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-16 pt-8 border-t border-slate-800 text-center">
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-x-6 gap-y-3 text-sm text-slate-400">
+        <div>© Final Worth LLC — For educational purposes</div>
+        <div class="hidden sm:block">•</div>
+        <a href="https://github.com/jvhoang/beyond-good-and-evil" target="_blank" 
+           class="inline-flex items-center gap-x-2 hover:text-amber-400 transition-colors">
+          <i class="fa-brands fa-github"></i> 
+          <span>jvhoang/beyond-good-and-evil</span>
+        </a>
+        <div class="hidden sm:block">•</div>
+        <a href="https://jvhoang.github.io/beyond-good-and-evil/" target="_blank"
+           class="inline-flex items-center gap-x-2 hover:text-emerald-400 transition-colors">
+          <span>View full site on GitHub Pages</span>
+          <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+        </a>
+      </div>
+      <div class="mt-4 text-[11px] text-slate-500 tracking-widest">296 SECTIONS • PREFACE • AFTERSONG • GRAPHICAL POWERPOINT-STYLE SUMMARIES</div>
+    </div>
+  </div>
+
+  <script>
+    function initTailwind() {}
+
+    const tocData = [
+      { group: "Preface", subtitle: "1885", items: [ { num: 0, short: "Preface — Sils-Maria, Upper Engadine, June 1885", padded: "000" } ] },
+      { group: "Part One: On the Prejudices of Philosophers", subtitle: "Sections 1–23", items: generateItems(1, 23, {1:"The will to truth...",2:"How could anything originate out of its opposite?"}) },
+      { group: "Part Two: The Free Spirit", subtitle: "Sections 24–44", items: generateItems(24, 44, {}) },
+      { group: "Part Three: What Is Religious", subtitle: "Sections 45–62", items: generateItems(45, 62, {}) },
+      { group: "Part Four: Epigrams and Interludes", subtitle: "Sections 63–185", items: generateItems(63, 185, {}) },
+      { group: "Part Five: The Natural History of Morals", subtitle: "Sections 186–203", items: generateItems(186, 203, {}) },
+      { group: "Part Six: We Scholars", subtitle: "Sections 204–213", items: generateItems(204, 213, {}) },
+      { group: "Part Seven: Our Virtues", subtitle: "Sections 214–239", items: generateItems(214, 239, {}) },
+      { group: "Part Eight: Peoples and Countries", subtitle: "Sections 240–256", items: generateItems(240, 256, {}) },
+      { group: "Part Nine: What Is Noble?", subtitle: "Sections 257–296", items: generateItems(257, 296, {}) },
+      { group: "Aftersong", subtitle: "From High Mountains", items: [ { num: 297, short: "From High Mountains: Aftersong — A Poem of Return and Invitation", padded: "297" } ] }
+    ];
+
+    const availableSections = new Set(["000","001","002","003","004","005","006","007","008","009","010","011","012","013","014","015","016","017","018","019","020","021","022","023","024","025","026","027","028","029","030","031","032","033","034","035","036","037","038","039","040","041","042","043","044","045","046","047","048","062","063","064","065","066","067","068","069","070","071","072","073","074","075","076","077","078","079","080","081","082","083","084","085","086","087","088","089","090","091","092","093","094","095","096","097","098","099","100","101","102","103","104","105","106","107","108","109","110"]);
+
+    function generateItems(start, end, overrides = {}) {
+      const items = [];
+      for (let i = start; i <= end; i++) {
+        const short = overrides[i] || `Aphorism ${i}`;
+        items.push({ num: i, short: short, padded: String(i).padStart(3, '0') });
+      }
+      return items;
+    }
+
+    function renderTOC() {
+      const container = document.getElementById('toc');
+      container.innerHTML = '';
+      let totalItems = 0;
+      let liveCount = 0;
+
+      tocData.forEach((groupData) => {
+        const groupEl = document.createElement('div');
+        groupEl.className = `group-wrapper mb-9`;
+
+        const header = document.createElement('div');
+        header.className = 'flex items-baseline justify-between mb-3 px-1';
+        header.innerHTML = `
+          <div>
+            <h3 class="group-title text-emerald-400 font-semibold tracking-[-0.015em]">${groupData.group}</h3>
+            <p class="text-xs text-slate-500 mt-0.5">${groupData.subtitle}</p>
+          </div>
+          <div class="text-xs font-mono-num text-slate-500 bg-slate-900 border border-slate-700 px-3 py-0.5 rounded-full">
+            ${groupData.items.length} items
+          </div>
+        `;
+        groupEl.appendChild(header);
+
+        const grid = document.createElement('div');
+        grid.className = 'grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-2.5';
+
+        groupData.items.forEach(item => {
+          totalItems++;
+          const isAvailable = availableSections.has(item.padded);
+          const card = document.createElement('a');
+          card.className = `section-card rounded-2xl px-4 py-3.5 toc-item flex flex-col justify-between min-h-[86px] ${isAvailable ? '' : 'opacity-60'}`;
+          card.dataset.num = item.num;
+          card.dataset.short = item.short.toLowerCase();
+
+          if (isAvailable) {
+            card.href = `https://jvhoang.github.io/beyond-good-and-evil/sections/${item.padded}.html`;
+            card.target = '_blank';
+            card.rel = 'noopener';
+            card.innerHTML = `
+              <div class="flex items-start justify-between gap-3">
+                <div>
+                  <div class="section-num text-amber-400 text-[13px] font-semibold tracking-[-0.3px]">§${item.padded}</div>
+                  <div class="card-short text-[13.5px] leading-snug text-slate-200 mt-1.5 pr-1 group-hover:text-white">
+                    ${item.short}
+                  </div>
+                </div>
+                <div class="flex-shrink-0 pt-0.5">
+                  <i class="fa-solid fa-arrow-up-right-from-square text-[10px] text-slate-600 group-hover:text-amber-400 transition-colors"></i>
+                </div>
+              </div>
+              <div class="mt-3 flex justify-end">
+                <div class="text-[9px] font-medium tracking-widest text-slate-500 group-hover:text-amber-400/80 transition-colors">OPEN PRESENTATION →</div>
+              </div>
+            `;
+            liveCount++;
+          } else {
+            card.innerHTML = `
+              <div class="flex items-start justify-between gap-3">
+                <div>
+                  <div class="section-num text-amber-400 text-[13px] font-semibold tracking-[-0.3px]">§${item.padded}</div>
+                  <div class="card-short text-[13.5px] leading-snug text-slate-200 mt-1.5 pr-1">
+                    ${item.short}
+                  </div>
+                </div>
+              </div>
+              <div class="mt-3 flex justify-end">
+                <div class="text-[9px] font-medium tracking-widest text-amber-400/70">COMING SOON — full Grok Imagine 5-slide presentation + detailed summary in progress</div>
+              </div>
+            `;
+          }
+          grid.appendChild(card);
+        });
+
+        groupEl.appendChild(grid);
+        container.appendChild(groupEl);
+      });
+
+      document.getElementById('results-count').innerHTML = `${liveCount} live full presentations • 200+ coming soon with Grok Imagine slides`;
+    }
+
+    function filterSections() { /* same as before, but only filter visible ones */ 
+      const searchTerm = document.getElementById('search-input').value.toLowerCase().trim();
+      const container = document.getElementById('toc');
+      const cards = container.querySelectorAll('.toc-item');
+      cards.forEach(card => {
+        const num = card.dataset.num || '';
+        const short = card.dataset.short || '';
+        const matches = !searchTerm || num.includes(searchTerm) || short.includes(searchTerm);
+        card.style.display = matches ? '' : 'none';
+      });
+    }
+
+    function setupKeyboard() {
+      document.addEventListener('keydown', function(e) {
+        if (e.key === '/' && document.activeElement.tagName === 'BODY') {
+          e.preventDefault();
+          document.getElementById('search-input').focus();
+        }
+      });
+    }
+
+    function initialize() {
+      initTailwind();
+      renderTOC();
+      setupKeyboard();
+    }
+
+    window.onload = initialize;
+  </script>
+</body>
+</html>
