@@ -72,7 +72,7 @@
     .search-input:focus {
       border-color: #d4af37;
       box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
-      outline: none;
+      outline: null;
     }
 
     .section-num {
@@ -157,16 +157,16 @@
       <p class="mt-2 text-sm text-slate-500 max-w-xl">Accurate • Insightful • Visually Rich Presentations for Every Section</p>
     </div>
 
-    <!-- Intro (rewritten, engaging, professional, public-ready) -->
+    <!-- Intro (refined for public: engaging, professional, easy language, positions as accurate modern insightful companion to Kaufmann's BGE, helpful while reading the book) -->
     <div class="max-w-3xl mb-10 text-[15px] leading-relaxed text-slate-300">
       <p class="mb-4">
-        Friedrich Nietzsche’s <em>Beyond Good and Evil: Prelude to a Philosophy of the Future</em> (1886) remains one of the most challenging and rewarding works in Western philosophy. With surgical precision and poetic intensity, Nietzsche dismantles the dogmas of traditional philosophy, interrogates the origins of morality and religion, and calls forth a new nobility—the “free spirits” and “philosophers of the future” who dare to think beyond good and evil.
+        Friedrich Nietzsche’s <em>Beyond Good and Evil: Prelude to a Philosophy of the Future</em> (1886) is one of the boldest and most rewarding books in philosophy. With sharp insight and powerful language, Nietzsche challenges old ideas about truth, morality, and religion. He invites “free spirits” and “philosophers of the future” to think beyond traditional good and evil and create new values for life.
       </p>
       <p class="mb-4">
-        This site is an <strong>accurate, insightful, modern companion</strong> to Walter Kaufmann’s celebrated translation—the definitive English edition prized for its clarity, fidelity to Nietzsche’s voice, and scholarly integrity. It is created specifically for readers of the book.
+        This site is a <strong>clear, accurate, and insightful modern companion</strong> to Walter Kaufmann’s celebrated English translation—the edition known for its precision, readability, and respect for Nietzsche’s original voice. It is built to help readers engage with the book directly.
       </p>
       <p>
-        Each presentation distills one section (or the Preface or Aftersong) into a self-contained, visually elegant experience featuring incisive summaries faithful to the text, key quotations drawn directly from the Kaufmann translation, thematic analysis, and custom-generated imagery in a refined dark-academia style. The goal: to make Nietzsche’s dense, aphoristic prose more accessible, memorable, and intellectually alive for contemporary students, teachers, and thoughtful readers.
+        For every section (plus the Preface and Aftersong), you’ll find a clean, self-contained presentation with a concise modern summary that stays faithful to the text, key quotations taken straight from the Kaufmann translation, thoughtful analysis of the main ideas, and original dark-academia style images generated to spark reflection. The aim is simple: to make Nietzsche’s rich, compact writing easier to follow, remember, and apply while you read or reread the book—whether you’re a student, teacher, or thoughtful reader.
       </p>
     </div>
 
@@ -216,7 +216,7 @@
         <input 
           id="search-input" 
           type="text" 
-          placeholder="Search by number, keyword, or aphorism (e.g. 63, truth, noble, free spirit, will to power...)" 
+          placeholder="Search sections by number or theme (e.g. 15, 63, truth, free spirit, morality, noble, will to power, philosophers...)" 
           class="search-input w-full bg-[#0f172a] border border-slate-700 focus:border-amber-400/70 text-white placeholder:text-slate-500 rounded-2xl pl-14 pr-6 py-4 text-lg shadow-inner"
           onkeyup="filterSections()"
           autocomplete="off">
@@ -225,16 +225,17 @@
         </div>
       </div>
       <div class="mt-2 text-xs text-slate-500 flex items-center gap-x-2 pl-1">
-        <span id="results-count">121 completed presentations • Preface + Sections 1–119 + Aftersong</span>
+        <span id="results-count">107+ live presentations • All 121 sources ready (Preface + Sections 1–119 + Aftersong). HTMLs + images deploying progressively.</span>
       </div>
+      <div class="mt-1 text-[10px] text-slate-500 pl-1 hidden sm:block">Filter updates instantly as you type. Press <span class="font-mono">/</span> to focus search. Mobile-friendly — scroll or tap cards.</div>
     </div>
 
-    <!-- Helpful professional banner -->
+    <!-- Helpful professional banner (enhanced) -->
     <div class="mb-8 p-4 bg-slate-900/60 border border-slate-700 rounded-2xl text-sm text-slate-300">
       <div class="flex flex-col sm:flex-row sm:items-center gap-x-3 gap-y-1">
         <div>
-          <strong class="text-amber-400">Companion Status:</strong> Over 120 detailed summaries and presentations completed with fidelity to the Kaufmann text. 
-          Live interactive HTMLs with full imagery are deployed progressively to GitHub Pages. Prompts for every Grok Imagine slide remain visible on each section page for reference.
+          <strong class="text-amber-400">Companion Status:</strong> Recently completed: Sections 010–019 and dozens more (Parts One–Four) now live with full summaries, Kaufmann quotes, analysis, and 5 custom Grok Imagine slides each. 
+          Over 107 presentations with imagery are live or deploying to GitHub Pages. All 121 sections + Preface + Aftersong have accurate source material ready. Slide prompts visible on each live presentation page.
         </div>
       </div>
     </div>
@@ -252,6 +253,10 @@
         
         <div class="prose prose-invert text-slate-300 max-w-none text-[15px] professional-note">
           <p class="mb-4">This resource is offered as a faithful educational companion, not a substitute for reading Nietzsche’s original text in the Kaufmann translation. Summaries and analyses are crafted for accuracy and insight while preserving the provocative spirit and nuance of the work. Imagery is generated to complement—not replace—the philosophical experience.</p>
+          
+          <p class="mb-2 text-xs uppercase tracking-widest text-emerald-400/80">Images &amp; Visuals (Accurate Note)</p>
+          <p class="mb-4 text-sm">Each live presentation includes 5 custom Grok Imagine slides in refined dark-academia style. All images are stored and served from the repository’s <code class="bg-slate-800 px-1 py-0.5 rounded text-amber-300 text-xs">images/</code> folder (e.g. <code class="bg-slate-800 px-1 py-0.5 rounded text-amber-300 text-xs">images/015-1.jpg</code> through <code class="bg-slate-800 px-1 py-0.5 rounded text-amber-300 text-xs">images/110-3.jpg</code> etc.). They load reliably on GitHub Pages, in embedded views, and when viewing the standalone HTML presentations. The note in individual section pages references the source generator location during development; public assets use the repo images/ folder.</p>
+          
           <p class="mb-3"><strong>Credits</strong></p>
           <ul class="list-none text-sm space-y-1 text-slate-400">
             <li>• Original text: Friedrich Nietzsche, <em>Beyond Good and Evil</em> (1886), translated by Walter Kaufmann</li>
@@ -298,7 +303,7 @@
           <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
         </a>
       </div>
-      <div class="mt-4 text-[11px] text-slate-500 tracking-widest">PREFACE • 296 SECTIONS • AFTERSONG • GRAPHICAL POWERPOINT-STYLE SUMMARIES • EDUCATIONAL COMPANION</div>
+      <div class="mt-4 text-[11px] text-slate-500 tracking-widest">PREFACE • SECTIONS 1–296 • AFTERSONG • FULL GRAPHICAL PRESENTATIONS WITH IMAGERY • ACCURATE KAUFMANN COMPANION</div>
     </div>
   </div>
 
@@ -308,7 +313,8 @@
       // Already loaded via CDN
     }
 
-    // Master data for the TOC - reflects all completed (~120+ from source)
+    // Master data for the TOC - reflects all available sources in the book (Preface + 1-119 + Aftersong = 121 total).
+    // Live vs in-progress determined by availableSections Set (updated for recent completions incl. 010-019 + 101+ live HTMLs).
     const tocData = [
       {
         group: "Preface",
@@ -423,10 +429,15 @@
       }
     ];
 
-    // All completed sections (~121 total: 000–119 + 297) from source work.
-    // Live links point to deployed HTMLs; full rollout of later sections + imagery is progressive.
+    // Updated available Set: reflects recently completed (incl. 010-019 and many more) + all sources as live or in progress.
+    // Local complete HTML presentations (with images): 000–048 + 059–110 (101+ live). 
+    // Remote deploys progressively; some additional early sections (e.g. 049,054-058) also live. 
+    // All 121 sources (Preface + 1–119 + 297 Aftersong) have txt summaries ready; HTMLs + visuals added in batches.
+    // Live links point to GitHub Pages sections/; others show as in-progress for full public rollout.
     const availableSections = new Set([
-      "000","001","002","003","004","005","006","007","008","009","010","011","012","013","014","015","016","017","018","019","020","021","022","023","024","025","026","027","028","029","030","031","032","033","034","035","036","037","038","039","040","041","042","043","044","045","046","047","048","049","050","051","052","053","054","055","056","057","058","059","060","061","062","063","064","065","066","067","068","069","070","071","072","073","074","075","076","077","078","079","080","081","082","083","084","085","086","087","088","089","090","091","092","093","094","095","096","097","098","099","100","101","102","103","104","105","106","107","108","109","110","111","112","113","114","115","116","117","118","119","297"
+      "000","001","002","003","004","005","006","007","008","009","010","011","012","013","014","015","016","017","018","019","020","021","022","023","024","025","026","027","028","029","030","031","032","033","034","035","036","037","038","039","040","041","042","043","044","045","046","047","048",
+      "049","054","055","056","057","058",
+      "059","060","061","062","063","064","065","066","067","068","069","070","071","072","073","074","075","076","077","078","079","080","081","082","083","084","085","086","087","088","089","090","091","092","093","094","095","096","097","098","099","100","101","102","103","104","105","106","107","108","109","110"
     ]);
 
     function generateItems(start, end, overrides = {}) {
@@ -515,7 +526,7 @@
                 </div>
               </div>
               <div class="mt-3 flex justify-end">
-                <div class="text-[9px] font-medium tracking-widest text-amber-400/70">COMPLETED — full presentation deploying</div>
+                <div class="text-[9px] font-medium tracking-widest text-amber-400/70">IN PROGRESS — full presentation + images deploying soon</div>
               </div>
             `;
           }
@@ -529,7 +540,7 @@
 
       // Store total for filter
       container.dataset.total = totalItems;
-      document.getElementById('results-count').innerHTML = `${liveCount} live presentations • 121 completed (Preface + 1–119 + Aftersong)`;
+      document.getElementById('results-count').innerHTML = `${liveCount} live presentations • All 121 sources (Preface + 1–119 + Aftersong) ready; more full presentations + imagery deploying`;
     }
 
     function filterSections() {
@@ -560,6 +571,8 @@
 
       // Hide empty groups
       groupWrappers.forEach(wrapper => {
+        const visibleCards = wrapper.querySelectorAll('.toc-item[style=""], .toc-item:not([style])').length; // approximate after filter
+        // simpler: recount visible in current display state
         let hasVisible = false;
         wrapper.querySelectorAll('.toc-item').forEach(c => { if (c.style.display !== 'none') hasVisible = true; });
         if (!hasVisible && searchTerm) {
@@ -569,13 +582,14 @@
         }
       });
 
-      // Update count
+      // Update count - improved messaging for search UX
       const countEl = document.getElementById('results-count');
+      const liveTotalNote = '107+ live';
       
       if (searchTerm) {
-        countEl.innerHTML = `${visibleCount} of 121 match “${searchTerm}”`;
+        countEl.innerHTML = `${visibleCount} matching “${searchTerm}” • ${liveTotalNote} total. Clear search to browse all.`;
       } else {
-        countEl.innerHTML = `121 completed presentations • Preface + 1–119 + Aftersong`;
+        countEl.innerHTML = `${liveTotalNote} live presentations • All 121 sources (Preface + 1–119 + Aftersong) ready; HTMLs + imagery in progress`;
       }
     }
 
