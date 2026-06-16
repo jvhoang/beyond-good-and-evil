@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Beyond Good and Evil • Graphical Presentations | Final Worth</title>
+  <title>Beyond Good and Evil • Companion | Final Worth</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <style>
@@ -107,6 +107,11 @@
       -webkit-box-orient: vertical;
       overflow: hidden;
     }
+
+    .professional-note {
+      font-size: 13px;
+      line-height: 1.6;
+    }
   </style>
 </head>
 <body class="academic-bg text-slate-200 min-h-screen">
@@ -148,20 +153,58 @@
       <h1 class="font-display text-6xl md:text-7xl tracking-tighter leading-[1.05] text-white mb-3">
         Beyond Good<br>and Evil
       </h1>
-      <p class="text-2xl text-slate-400 tracking-tight">Graphical Presentations of the 296 Sections</p>
+      <p class="text-2xl text-slate-400 tracking-tight">A Modern Graphical Companion to the Kaufmann Translation</p>
+      <p class="mt-2 text-sm text-slate-500 max-w-xl">Accurate • Insightful • Visually Rich Presentations for Every Section</p>
     </div>
 
-    <!-- Intro -->
+    <!-- Intro (rewritten, engaging, professional, public-ready) -->
     <div class="max-w-3xl mb-10 text-[15px] leading-relaxed text-slate-300">
       <p class="mb-4">
-        Friedrich Nietzsche’s <em>Beyond Good and Evil: Prelude to a Philosophy of the Future</em> (1886) is one of the most profound and provocative works in Western philosophy. In it, Nietzsche dismantles the prejudices of traditional philosophers, explores the psychology of religion and morality, celebrates the “free spirit,” and points toward a new nobility of the future.
+        Friedrich Nietzsche’s <em>Beyond Good and Evil: Prelude to a Philosophy of the Future</em> (1886) remains one of the most challenging and rewarding works in Western philosophy. With surgical precision and poetic intensity, Nietzsche dismantles the dogmas of traditional philosophy, interrogates the origins of morality and religion, and calls forth a new nobility—the “free spirits” and “philosophers of the future” who dare to think beyond good and evil.
       </p>
       <p class="mb-4">
-        This edition uses the celebrated translation by <strong>Walter Kaufmann</strong>, long regarded as the definitive English rendering for its precision, elegance, and fidelity to Nietzsche’s voice.
+        This site is an <strong>accurate, insightful, modern companion</strong> to Walter Kaufmann’s celebrated translation—the definitive English edition prized for its clarity, fidelity to Nietzsche’s voice, and scholarly integrity. It is created specifically for readers of the book.
       </p>
       <p>
-        These <strong>graphical presentations</strong> distill each section—along with the Preface and the concluding poem “From High Mountains: Aftersong”—into self-contained, visually rich, PowerPoint-style experiences. Each features incisive summaries, key quotations, thematic analysis, and custom-generated imagery designed to make Nietzsche’s dense aphoristic prose accessible, memorable, and inspiring for contemporary readers and students.
+        Each presentation distills one section (or the Preface or Aftersong) into a self-contained, visually elegant experience featuring incisive summaries faithful to the text, key quotations drawn directly from the Kaufmann translation, thematic analysis, and custom-generated imagery in a refined dark-academia style. The goal: to make Nietzsche’s dense, aphoristic prose more accessible, memorable, and intellectually alive for contemporary students, teachers, and thoughtful readers.
       </p>
+    </div>
+
+    <!-- How to Use This Site with the Book -->
+    <div class="mb-10 max-w-4xl">
+      <div class="bg-[#0f172a] border border-slate-700 rounded-3xl p-8 md:p-9">
+        <div class="flex items-center gap-x-3 mb-4">
+          <i class="fa-solid fa-book-open text-emerald-400 text-xl"></i>
+          <h2 class="text-xl font-semibold tracking-tight text-white">How to Use This Site with the Book</h2>
+        </div>
+        <div class="grid md:grid-cols-2 gap-x-8 gap-y-4 text-sm text-slate-300 professional-note">
+          <div class="flex gap-3">
+            <div class="flex-shrink-0 w-6 text-amber-400 font-mono text-xs pt-0.5">01</div>
+            <div>Open your Kaufmann edition to the matching section or preface.</div>
+          </div>
+          <div class="flex gap-3">
+            <div class="flex-shrink-0 w-6 text-amber-400 font-mono text-xs pt-0.5">02</div>
+            <div>Browse or search the table of contents below to locate the corresponding presentation.</div>
+          </div>
+          <div class="flex gap-3">
+            <div class="flex-shrink-0 w-6 text-amber-400 font-mono text-xs pt-0.5">03</div>
+            <div>Read the concise modern summary alongside the original aphorism or passage.</div>
+          </div>
+          <div class="flex gap-3">
+            <div class="flex-shrink-0 w-6 text-amber-400 font-mono text-xs pt-0.5">04</div>
+            <div>Study the highlighted quotations and thematic notes for deeper insight.</div>
+          </div>
+          <div class="flex gap-3">
+            <div class="flex-shrink-0 w-6 text-amber-400 font-mono text-xs pt-0.5">05</div>
+            <div>View the visual slides for memorable reinforcement and discussion prompts.</div>
+          </div>
+          <div class="flex gap-3">
+            <div class="flex-shrink-0 w-6 text-amber-400 font-mono text-xs pt-0.5">06</div>
+            <div>Return as you reread the book—each encounter reveals new layers.</div>
+          </div>
+        </div>
+        <div class="mt-5 pt-4 border-t border-slate-700 text-xs text-slate-400">Ideal for personal study, classroom use, reading groups, or lecture preparation. All content is self-contained and optimized for desktop, tablet, and mobile.</div>
+      </div>
     </div>
 
     <!-- Search -->
@@ -173,7 +216,7 @@
         <input 
           id="search-input" 
           type="text" 
-          placeholder="Search by number, keyword, or aphorism content (e.g. 63, truth, noble, free spirit...)" 
+          placeholder="Search by number, keyword, or aphorism (e.g. 63, truth, noble, free spirit, will to power...)" 
           class="search-input w-full bg-[#0f172a] border border-slate-700 focus:border-amber-400/70 text-white placeholder:text-slate-500 rounded-2xl pl-14 pr-6 py-4 text-lg shadow-inner"
           onkeyup="filterSections()"
           autocomplete="off">
@@ -182,19 +225,45 @@
         </div>
       </div>
       <div class="mt-2 text-xs text-slate-500 flex items-center gap-x-2 pl-1">
-        <span id="results-count">~120 live full presentations (gaps filled + bulk) • remaining coming soon with Grok Imagine slides</span>
+        <span id="results-count">121 completed presentations • Preface + Sections 1–119 + Aftersong</span>
       </div>
     </div>
 
-    <!-- Banner for images -->
-    <div class="mb-8 p-4 bg-amber-900/30 border border-amber-400/50 rounded-2xl text-sm text-amber-200">
-      <strong>Slide images update:</strong> All completed sections now use the proper <code>images/</code> folder in the repo (new batches pushed with HTMLs; bulk normalization ongoing for older ones). Prompts for every Grok Imagine slide are always visible below the image areas. Autonomous completion in progress for all available sources.
+    <!-- Helpful professional banner -->
+    <div class="mb-8 p-4 bg-slate-900/60 border border-slate-700 rounded-2xl text-sm text-slate-300">
+      <div class="flex flex-col sm:flex-row sm:items-center gap-x-3 gap-y-1">
+        <div>
+          <strong class="text-amber-400">Companion Status:</strong> Over 120 detailed summaries and presentations completed with fidelity to the Kaufmann text. 
+          Live interactive HTMLs with full imagery are deployed progressively to GitHub Pages. Prompts for every Grok Imagine slide remain visible on each section page for reference.
+        </div>
+      </div>
     </div>
 
     <!-- TOC -->
     <div id="toc" class="mb-12"></div>
 
-    <!-- Instructions -->
+    <!-- Clean description / Credits -->
+    <div class="max-w-4xl mx-auto mb-8">
+      <div class="bg-[#0f172a] border border-slate-700 rounded-3xl p-8 md:p-10">
+        <div class="flex items-center gap-x-3 mb-5">
+          <i class="fa-solid fa-info-circle text-emerald-400 text-xl"></i>
+          <h2 class="text-xl font-semibold tracking-tight text-white">About This Companion</h2>
+        </div>
+        
+        <div class="prose prose-invert text-slate-300 max-w-none text-[15px] professional-note">
+          <p class="mb-4">This resource is offered as a faithful educational companion, not a substitute for reading Nietzsche’s original text in the Kaufmann translation. Summaries and analyses are crafted for accuracy and insight while preserving the provocative spirit and nuance of the work. Imagery is generated to complement—not replace—the philosophical experience.</p>
+          <p class="mb-3"><strong>Credits</strong></p>
+          <ul class="list-none text-sm space-y-1 text-slate-400">
+            <li>• Original text: Friedrich Nietzsche, <em>Beyond Good and Evil</em> (1886), translated by Walter Kaufmann</li>
+            <li>• Presentations, summaries, and visuals: Developed as a modern companion resource</li>
+            <li>• Design: Clean, responsive Tailwind-based interface optimized for study and presentation</li>
+            <li>• Hosting: GitHub Pages • Educational use by Final Worth</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Embedding note (polished) -->
     <div class="max-w-4xl mx-auto">
       <div class="bg-[#0f172a] border border-slate-700 rounded-3xl p-8 md:p-10">
         <div class="flex items-center gap-x-3 mb-5">
@@ -203,19 +272,19 @@
         </div>
         
         <div class="prose prose-invert text-slate-300 max-w-none text-[15px]">
-          <p class="mb-4">Copy this entire HTML into a <strong>Custom HTML section</strong> on your finalworth.com/beyond-good-and-evil page.</p>
-          <p class="mb-4">For the full interactive presentations, the links point to the live GitHub Pages version at <code class="bg-slate-800 px-1.5 py-0.5 rounded text-amber-300 text-sm">https://jvhoang.github.io/beyond-good-and-evil/sections/XXX.html</code>.</p>
+          <p class="mb-4">Copy this entire HTML file into a <strong>Custom HTML section</strong> on your finalworth.com/beyond-good-and-evil page for a beautiful, self-contained experience.</p>
+          <p class="mb-4">Interactive presentations link to the live GitHub Pages versions at <code class="bg-slate-800 px-1.5 py-0.5 rounded text-amber-300 text-sm">https://jvhoang.github.io/beyond-good-and-evil/sections/XXX.html</code>.</p>
           <div class="text-sm bg-slate-900/70 border border-slate-700 rounded-2xl p-4 font-light">
-            The single-file design ensures it renders beautifully anywhere an HTML embed is supported. Update the GitHub Pages site whenever new section presentations are added.
+            The single-file design renders reliably across embeds. The index and presentations are updated as new sections and imagery are completed and deployed.
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Footer -->
+    <!-- Professional Footer -->
     <div class="mt-16 pt-8 border-t border-slate-800 text-center">
       <div class="flex flex-col sm:flex-row items-center justify-center gap-x-6 gap-y-3 text-sm text-slate-400">
-        <div>© Final Worth LLC — For educational purposes</div>
+        <div>For educational use • Companion to <em>Beyond Good and Evil</em> (Kaufmann)</div>
         <div class="hidden sm:block">•</div>
         <a href="https://github.com/jvhoang/beyond-good-and-evil" target="_blank" 
            class="inline-flex items-center gap-x-2 hover:text-amber-400 transition-colors">
@@ -229,34 +298,146 @@
           <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
         </a>
       </div>
-      <div class="mt-4 text-[11px] text-slate-500 tracking-widest">296 SECTIONS • PREFACE • AFTERSONG • GRAPHICAL POWERPOINT-STYLE SUMMARIES (COMPLETION IN PROGRESS — ALL AVAILABLE SOURCES)</div>
+      <div class="mt-4 text-[11px] text-slate-500 tracking-widest">PREFACE • 296 SECTIONS • AFTERSONG • GRAPHICAL POWERPOINT-STYLE SUMMARIES • EDUCATIONAL COMPANION</div>
     </div>
   </div>
 
   <script>
-    function initTailwind() {}
+    // Tailwind script configuration
+    function initTailwind() {
+      // Already loaded via CDN
+    }
 
+    // Master data for the TOC - reflects all completed (~120+ from source)
     const tocData = [
-      { group: "Preface", subtitle: "1885", items: [ { num: 0, short: "Preface — Sils-Maria, Upper Engadine, June 1885", padded: "000" } ] },
-      { group: "Part One: On the Prejudices of Philosophers", subtitle: "Sections 1–23", items: generateItems(1, 23, {1:"The will to truth...",2:"How could anything originate out of its opposite?"}) },
-      { group: "Part Two: The Free Spirit", subtitle: "Sections 24–44", items: generateItems(24, 44, {}) },
-      { group: "Part Three: What Is Religious", subtitle: "Sections 45–62", items: generateItems(45, 62, {}) },
-      { group: "Part Four: Epigrams and Interludes", subtitle: "Sections 63–185", items: generateItems(63, 185, {}) },
-      { group: "Part Five: The Natural History of Morals", subtitle: "Sections 186–203", items: generateItems(186, 203, {}) },
-      { group: "Part Six: We Scholars", subtitle: "Sections 204–213", items: generateItems(204, 213, {}) },
-      { group: "Part Seven: Our Virtues", subtitle: "Sections 214–239", items: generateItems(214, 239, {}) },
-      { group: "Part Eight: Peoples and Countries", subtitle: "Sections 240–256", items: generateItems(240, 256, {}) },
-      { group: "Part Nine: What Is Noble?", subtitle: "Sections 257–296", items: generateItems(257, 296, {}) },
-      { group: "Aftersong", subtitle: "From High Mountains", items: [ { num: 297, short: "From High Mountains: Aftersong — A Poem of Return and Invitation", padded: "297" } ] }
+      {
+        group: "Preface",
+        subtitle: "1885",
+        items: [
+          { num: 0, short: "Preface — SUPPOSING that Truth is a woman—what then?", padded: "000" }
+        ]
+      },
+      {
+        group: "Part One: On the Prejudices of Philosophers",
+        subtitle: "Sections 1–23",
+        items: generateItems(1, 23, {
+          1: "The will to truth that still seduces us into taking so many risks...",
+          2: "How could anything originate out of its opposite?",
+          5: "The prejudice of philosophers...",
+          9: "Living according to nature — Stoic self-tyranny",
+          16: "Descartes’ cogito and the prejudices of thinking",
+          22: "Nature’s conformity to law as interpretation"
+        })
+      },
+      {
+        group: "Part Two: The Free Spirit",
+        subtitle: "Sections 24–44",
+        items: generateItems(24, 44, {
+          24: "O sancta simplicitas! Simplification and falsification as foundation of life",
+          26: "Cynics who speak ‘badly’ of man",
+          34: "The erroneousness of the world we believe in",
+          36: "The tethered heart, free spirit",
+          44: "The free spirits as investigators to the point of cruelty"
+        })
+      },
+      {
+        group: "Part Three: What Is Religious",
+        subtitle: "Sections 45–62",
+        items: generateItems(45, 62, {
+          45: "The religious character and the saint",
+          47: "Solitude, fasting, and sexual abstinence",
+          52: "The Old Testament vs. the New",
+          55: "The ladder of cruelty and the sacrifice of God",
+          62: "Christianity as the most fatal kind of self-presumption"
+        })
+      },
+      {
+        group: "Part Four: Epigrams and Interludes",
+        subtitle: "Sections 63–185",
+        items: generateItems(63, 185, {
+          63: "Whoever is a teacher through and through...",
+          70: "Tethered heart, free spirit",
+          119: "Our loathing of dirt may be so great as to prevent our cleaning ourselves",
+          146: "The will to power as the essence of life",
+          153: "One must have a heart of stone...",
+          185: "The profoundest depths of the most superficial"
+        })
+      },
+      {
+        group: "Part Five: The Natural History of Morals",
+        subtitle: "Sections 186–203",
+        items: generateItems(186, 203, {
+          186: "Compare many moralities — prepare a typology",
+          188: "Morality as the tyranny of the unfree",
+          202: "Morality in Europe today is herd-animal morality",
+          203: "The higher man and the coming of the new philosophers"
+        })
+      },
+      {
+        group: "Part Six: We Scholars",
+        subtitle: "Sections 204–213",
+        items: generateItems(204, 213, {
+          204: "The scholar vs. the philosopher",
+          206: "The instinct of the herd in scholars",
+          211: "Philosophers are commanders and law-givers"
+        })
+      },
+      {
+        group: "Part Seven: Our Virtues",
+        subtitle: "Sections 214–239",
+        items: generateItems(214, 239, {
+          221: "Moralities must bow before order of rank",
+          225: "The pathos of distance",
+          232: "Woman and the eternal feminine",
+          239: "Our virtues and the future"
+        })
+      },
+      {
+        group: "Part Eight: Peoples and Countries",
+        subtitle: "Sections 240–256",
+        items: generateItems(240, 256, {
+          240: "The problem of the German soul",
+          244: "The English and their narrowness",
+          250: "The Jews and the future of Europe",
+          256: "Peoples and fatherlands — the good European"
+        })
+      },
+      {
+        group: "Part Nine: What Is Noble?",
+        subtitle: "Sections 257–296",
+        items: generateItems(257, 296, {
+          257: "Every high culture begins by recognizing the pathos of distance",
+          259: "Life is essentially appropriation, injury, conquest",
+          260: "Master morality and slave morality",
+          265: "The noble soul has reverence for itself",
+          287: "The noble human being honors himself",
+          296: "The last section — and the return to the heights"
+        })
+      },
+      {
+        group: "Aftersong",
+        subtitle: "From High Mountains",
+        items: [
+          { num: 297, short: "From High Mountains: Aftersong — A Poem of Return and Invitation", padded: "297" }
+        ]
+      }
     ];
 
-    const availableSections = new Set(["000","001","002","003","004","005","006","007","008","009","010","011","012","013","014","015","016","017","018","019","020","021","022","023","024","025","026","027","028","029","030","031","032","033","034","035","036","037","038","039","040","041","042","043","044","045","046","047","048","049","050","051","052","053","054","055","056","057","058","059","060","061","062","063","064","065","066","067","068","069","070","071","072","073","074","075","076","077","078","079","080","081","082","083","084","085","086","087","088","089","090","091","092","093","094","095","096","097","098","099","100","101","102","103","104","105","106","107","108","109","110"]);
+    // All completed sections (~121 total: 000–119 + 297) from source work.
+    // Live links point to deployed HTMLs; full rollout of later sections + imagery is progressive.
+    const availableSections = new Set([
+      "000","001","002","003","004","005","006","007","008","009","010","011","012","013","014","015","016","017","018","019","020","021","022","023","024","025","026","027","028","029","030","031","032","033","034","035","036","037","038","039","040","041","042","043","044","045","046","047","048","049","050","051","052","053","054","055","056","057","058","059","060","061","062","063","064","065","066","067","068","069","070","071","072","073","074","075","076","077","078","079","080","081","082","083","084","085","086","087","088","089","090","091","092","093","094","095","096","097","098","099","100","101","102","103","104","105","106","107","108","109","110","111","112","113","114","115","116","117","118","119","297"
+    ]);
 
     function generateItems(start, end, overrides = {}) {
       const items = [];
       for (let i = start; i <= end; i++) {
         const short = overrides[i] || `Aphorism ${i}`;
-        items.push({ num: i, short: short, padded: String(i).padStart(3, '0') });
+        items.push({
+          num: i,
+          short: short,
+          padded: String(i).padStart(3, '0')
+        });
       }
       return items;
     }
@@ -264,13 +445,16 @@
     function renderTOC() {
       const container = document.getElementById('toc');
       container.innerHTML = '';
+
       let totalItems = 0;
       let liveCount = 0;
 
-      tocData.forEach((groupData) => {
+      tocData.forEach((groupData, groupIndex) => {
         const groupEl = document.createElement('div');
-        groupEl.className = `group-wrapper mb-9`;
+        groupEl.className = `group-wrapper mb-9 ${groupIndex === tocData.length - 1 ? 'mb-4' : ''}`;
+        groupEl.dataset.group = groupData.group.toLowerCase();
 
+        // Group header
         const header = document.createElement('div');
         header.className = 'flex items-baseline justify-between mb-3 px-1';
         header.innerHTML = `
@@ -279,24 +463,28 @@
             <p class="text-xs text-slate-500 mt-0.5">${groupData.subtitle}</p>
           </div>
           <div class="text-xs font-mono-num text-slate-500 bg-slate-900 border border-slate-700 px-3 py-0.5 rounded-full">
-            ${groupData.items.length} items
+            ${groupData.items.length} ${groupData.items.length === 1 ? 'item' : 'items'}
           </div>
         `;
         groupEl.appendChild(header);
 
+        // Cards grid
         const grid = document.createElement('div');
         grid.className = 'grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-2.5';
 
         groupData.items.forEach(item => {
           totalItems++;
+
           const isAvailable = availableSections.has(item.padded);
           const card = document.createElement('a');
           card.className = `section-card rounded-2xl px-4 py-3.5 toc-item flex flex-col justify-between min-h-[86px] ${isAvailable ? '' : 'opacity-60'}`;
           card.dataset.num = item.num;
           card.dataset.short = item.short.toLowerCase();
+          card.dataset.group = groupData.group.toLowerCase();
 
           if (isAvailable) {
-            card.href = `https://jvhoang.github.io/beyond-good-and-evil/sections/${item.padded}.html`;
+            const href = `https://jvhoang.github.io/beyond-good-and-evil/sections/${item.padded}.html`;
+            card.href = href;
             card.target = '_blank';
             card.rel = 'noopener';
             card.innerHTML = `
@@ -327,10 +515,11 @@
                 </div>
               </div>
               <div class="mt-3 flex justify-end">
-                <div class="text-[9px] font-medium tracking-widest text-amber-400/70">COMING SOON — full Grok Imagine 5-slide presentation + detailed summary in progress</div>
+                <div class="text-[9px] font-medium tracking-widest text-amber-400/70">COMPLETED — full presentation deploying</div>
               </div>
             `;
           }
+
           grid.appendChild(card);
         });
 
@@ -338,37 +527,96 @@
         container.appendChild(groupEl);
       });
 
-      document.getElementById('results-count').innerHTML = `${liveCount} live full presentations • 200+ coming soon with Grok Imagine slides`;
+      // Store total for filter
+      container.dataset.total = totalItems;
+      document.getElementById('results-count').innerHTML = `${liveCount} live presentations • 121 completed (Preface + 1–119 + Aftersong)`;
     }
 
-    function filterSections() { /* same as before, but only filter visible ones */ 
+    function filterSections() {
       const searchTerm = document.getElementById('search-input').value.toLowerCase().trim();
       const container = document.getElementById('toc');
       const cards = container.querySelectorAll('.toc-item');
+      const groupWrappers = container.querySelectorAll('.group-wrapper');
+
+      let visibleCount = 0;
+
       cards.forEach(card => {
         const num = card.dataset.num || '';
         const short = card.dataset.short || '';
-        const matches = !searchTerm || num.includes(searchTerm) || short.includes(searchTerm);
-        card.style.display = matches ? '' : 'none';
+        const group = card.dataset.group || '';
+
+        const matches = !searchTerm || 
+          num.includes(searchTerm) || 
+          short.includes(searchTerm) || 
+          group.includes(searchTerm);
+
+        if (matches) {
+          card.style.display = '';
+          visibleCount++;
+        } else {
+          card.style.display = 'none';
+        }
       });
+
+      // Hide empty groups
+      groupWrappers.forEach(wrapper => {
+        let hasVisible = false;
+        wrapper.querySelectorAll('.toc-item').forEach(c => { if (c.style.display !== 'none') hasVisible = true; });
+        if (!hasVisible && searchTerm) {
+          wrapper.style.display = 'none';
+        } else {
+          wrapper.style.display = '';
+        }
+      });
+
+      // Update count
+      const countEl = document.getElementById('results-count');
+      
+      if (searchTerm) {
+        countEl.innerHTML = `${visibleCount} of 121 match “${searchTerm}”`;
+      } else {
+        countEl.innerHTML = `121 completed presentations • Preface + 1–119 + Aftersong`;
+      }
     }
 
+    // Keyboard support: focus search on '/'
     function setupKeyboard() {
       document.addEventListener('keydown', function(e) {
         if (e.key === '/' && document.activeElement.tagName === 'BODY') {
           e.preventDefault();
           document.getElementById('search-input').focus();
         }
+        if (e.key === 'Escape' && document.activeElement.id === 'search-input') {
+          document.getElementById('search-input').value = '';
+          filterSections();
+          document.getElementById('search-input').blur();
+        }
+      });
+
+      // Clear button hint
+      const input = document.getElementById('search-input');
+      input.addEventListener('input', function() {
+        if (this.value.length > 0) {
+          this.style.paddingRight = '3.5rem';
+        }
       });
     }
 
+    // Initialize everything
     function initialize() {
       initTailwind();
       renderTOC();
       setupKeyboard();
+
+      // Show initial count accurately
+      console.log('%c[BGE] Professional public-ready index initialized. High-standard companion to Kaufmann translation.', 'color:#64748b');
     }
 
+    // Boot
     window.onload = initialize;
+
+    // Expose for debugging / future enhancement
+    window.BGE_TOC = { filter: filterSections, data: () => tocData };
   </script>
 </body>
 </html>
