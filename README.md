@@ -21,7 +21,7 @@ The goal is simple: make Nietzsche’s dense, powerful aphorisms accessible and 
 
 ## Features
 
-- **121+ live graphical presentations** (Preface + Sections 000–119 + Aftersong 297) with full modern summaries, direct Kaufmann quotes, analysis, and visuals
+- **298/298 live graphical presentations** (Preface + Sections 000–297 + Aftersong) with full modern summaries, direct Kaufmann quotes, analysis, and visuals
 - **235+ helpful custom visuals** organized in a dedicated, reliably served `images/` folder (e.g. `images/015-1.jpg`, `images/110-3.jpg`)
 - Live instant search and filtering by section number or theme (keywords such as “free spirit”, “morality”, “will to power”, “noble”, “philosophers of the future”)
 - Complete table of contents organized by the book’s nine parts, plus Preface and Aftersong (covers all 298 sources in the complete work)
@@ -31,7 +31,7 @@ The goal is simple: make Nietzsche’s dense, powerful aphorisms accessible and 
 - Single-file `index.html` designed for easy copy-paste embedding on personal sites, course pages, or platforms such as GoDaddy/finalworth.com
 - Clean “How to Use with the Book” guide and professional credits/usage notes
 
-All presentations link to the canonical live versions on GitHub Pages. In-progress sections are clearly marked and continue to be added.
+All 298 presentations link to the canonical live versions on GitHub Pages. All sections complete.
 
 ## Public & Educational Use
 
@@ -52,10 +52,10 @@ Copy the entire polished `index.html` into a Custom HTML block or embed area on 
 
 ## Current Status (Public-Ready)
 
-- 121+ completed graphical presentations live or in final deployment (drawn from local completed sources 000–119 + fills such as 049–058 and Aftersong)
-- `images/` folder fully operational with 235+ high-quality slides
-- All 298 book sources have accurate underlying source material ready
-- Additional sections, HTML presentations, and imagery continue to roll out progressively
+- ALL 298/298 sections uploaded and live (000-297 + index + images)
+- `images/` folder fully operational
+- Complete professional self-contained HTML presentations for every section
+- Accurate summaries, Kaufmann quotes, modern notes, and slides for the full work
 
 The companion is public-ready: accurate claims, clean professional tone, comprehensive usage guidance, proper Kaufmann credits, no misleading language, and excellent readability/UX across devices.
 
