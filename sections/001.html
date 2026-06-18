@@ -19,10 +19,19 @@
         .slide-img:hover { transform: scale(1.015); }
         .section-header { background: linear-gradient(180deg, #111827 0%, transparent 100%); }
         .philosophy-text { line-height: 1.75; }
+        .reading-prose { line-height: 1.8; }
+        .summary-section { margin-bottom: 1.25rem; }
+        .summary-label { font-weight: 600; color: #d4af37; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; }
+        .summary-body { padding-left: 0.75rem; border-left: 2px solid rgba(212,175,55,0.25); }
+        .summary-list { list-style: disc; margin: 0.5rem 0 0 1.25rem; }
+        .summary-list li { margin-bottom: 0.5rem; padding-left: 0.25rem; }
+        .quote-list { list-style: none; margin: 0.5rem 0 0 0; padding-left: 0.75rem; border-left: 3px solid rgba(212,175,55,0.4); }
+        .quote-list li { margin-bottom: 0.75rem; font-style: italic; color: #cbd5e1; }
+
     </style>
 </head>
 <body>
-    <div class="max-w-5xl mx-auto px-6 py-8">
+    <div class="max-w-5xl mx-auto px-3 sm:px-4 md:px-6 py-6 sm:py-8">
         <!-- Header / Nav -->
         <div class="flex items-center justify-between mb-8">
             <a href="../index.html" class="flex items-center gap-3 text-sm text-slate-400 hover:text-white">
@@ -40,7 +49,7 @@
             </div>
         </div>
 
-        <div class="section-header sticky top-0 z-10 pb-6 pt-2 -mx-6 px-6 mb-8 border-b border-slate-800">
+        <div class="section-header sticky top-0 z-10 pb-6 pt-2 -mx-3 sm:-mx-4 md:-mx-6 px-3 sm:px-4 md:px-6 mb-8 border-b border-slate-800">
             <div class="flex items-end gap-4">
                 <div>
                     <div class="uppercase tracking-[4px] text-xs text-[#d4af37] font-medium">FRIEDRICH NIETZSCHE • 1886</div>
@@ -51,36 +60,55 @@
         </div>
 
         <!-- Simple Modern Summary -->
-        <div class="dark-card rounded-3xl p-8 mb-6 border border-slate-700/60">
+        <div class="dark-card rounded-2xl sm:rounded-3xl p-4 sm:p-6 md:p-8 mb-6 border border-slate-700/60">
             <div class="flex items-center gap-2 mb-4">
                 <div class="h-px flex-1 bg-gradient-to-r from-transparent via-emerald-400/30 to-transparent"></div>
                 <span class="uppercase text-xs tracking-[2px] text-emerald-400 font-semibold">Simple modern summary</span>
                 <div class="h-px flex-1 bg-gradient-to-l from-transparent via-emerald-400/30 to-transparent"></div>
             </div>
-            <p class="philosophy-text text-[15px] text-slate-300 max-w-prose mx-auto leading-relaxed">
+            <p class="philosophy-text text-[15px] text-slate-300 w-full leading-relaxed">
                 Nietzsche asks why we want truth at all—why not lies, uncertainty, or ignorance instead? He treats the value of truth as a dangerous question, not an obvious good. Real philosophy starts when you are brave enough to question your own obsession with being right.
             </p>
         </div>
 
         <!-- Summary -->
-        <div class="dark-card rounded-3xl p-10 mb-10">
+        <div class="dark-card rounded-2xl sm:rounded-3xl p-4 sm:p-6 md:p-10 mb-8 sm:mb-10">
             <div class="flex items-center gap-2 mb-6">
                 <div class="h-px flex-1 bg-gradient-to-r from-transparent via-[#d4af37]/30 to-transparent"></div>
                 <span class="uppercase text-xs tracking-[2px] text-[#d4af37] font-semibold">EXTENSIVE SUMMARY</span>
                 <div class="h-px flex-1 bg-gradient-to-l from-transparent via-[#d4af37]/30 to-transparent"></div>
             </div>
-            <div class="philosophy-text text-[15px] text-slate-300 max-w-prose mx-auto">
-                Section 1 turns philosophy’s most sacred assumption into an urgent problem. The “Will to Truth” has driven philosophers into hazardous territory and left behind perplexing questions. Nietzsche refuses to treat this drive as an unquestioned good. Instead, he poses the questions earlier thinkers largely avoided: Granted that we want the truth—WHY NOT RATHER untruth? And uncertainty? Even ignorance?
-
-                The problem of the <em>value</em> of truth stops us in our tracks. It is a “rendezvous of questions.” Nietzsche dramatizes the danger with the image of Oedipus facing the Sphinx: “Which of us is the Oedipus here? Which the Sphinx?” Raising the question carries real risk—“For there is risk in raising it, perhaps there is no greater risk.” The free spirit must have the strength to ask it anyway.
-            <br><br>
-                <strong>Key Insight:</strong> Genuine philosophy does not begin with answers. It begins with the courage to interrogate its own most cherished value—the will to truth itself. The Sphinx offers no solutions; she compels the questioner to confront the risk and necessity of the question.
-            <br><br>
-                <strong>Connection to the book:</strong> The Preface’s “free, VERY free spirits” now face their first real test. This section’s suspicion of truth directly fuels the dismantling of value antitheses in Section 2, the naturalization of consciousness as instinctive in Section 3, and the affirmation that untruth can be a condition of life in Section 4. It launches the book’s central project: a revaluation that begins by turning the critical gaze upon the drive that has long defined Western philosophy.
-            <br><br>
-                <strong>Why it matters:</strong> In an age of “post-truth” rhetoric, scientific denial, and comforting narratives sold as facts, Nietzsche does not simply defend truth. He asks whether our attachment to it is always life-serving—or whether certain untruths, errors, and illusions have proven more vital to human flourishing than we usually admit. For readers of the Kaufmann translation, the free spirit must possess the strength to pose the question and live with its consequences.
+            <div class="philosophy-text reading-prose text-[15px] text-slate-300 w-full">
+                <div class="summary-section">
+                    <div class="summary-label">Key Kaufmann quotes</div>
+                    <div class="summary-body">
+                                                <ul class="quote-list">
+                            <li>&ldquo;Will to Truth&rdquo;</li>
+                            <li>&ldquo;rendezvous of questions.&rdquo;</li>
+                            <li>&ldquo;Which of us is the Oedipus here? Which the Sphinx?&rdquo;</li>
+                            <li>&ldquo;For there is risk in raising it, perhaps there is no greater risk.&rdquo;</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="summary-section">
+                    <div class="summary-label">Key insight</div>
+                    <div class="summary-body">
+                        <p>Genuine philosophy does not begin with answers. It begins with the courage to interrogate its own most cherished value—the will to truth itself. The Sphinx offers no solutions; she compels the questioner to confront the risk and necessity of the question.</p>
+                    </div>
+                </div>
+                <div class="summary-section">
+                    <div class="summary-label">Connection to the book</div>
+                    <div class="summary-body">
+                        <p>The Preface’s “free, VERY free spirits” now face their first real test. This section’s suspicion of truth directly fuels the dismantling of value antitheses in Section 2, the naturalization of consciousness as instinctive in Section 3, and the affirmation that untruth can be a condition of life in Section 4. It launches the book’s central project: a revaluation that begins by turning the critical gaze upon the drive that has long defined Western philosophy.</p>
+                    </div>
+                </div>
+                <div class="summary-section">
+                    <div class="summary-label">Why it matters</div>
+                    <div class="summary-body">
+                        <p>In an age of “post-truth” rhetoric, scientific denial, and comforting narratives sold as facts, Nietzsche does not simply defend truth. He asks whether our attachment to it is always life-serving—or whether certain untruths, errors, and illusions have proven more vital to human flourishing than we usually admit. For readers of the Kaufmann translation, the free spirit must possess the strength to pose the question and live with its consequences.</p>
+                    </div>
+                </div>
             </div>
-            
             <div class="mt-8 pt-6 border-t border-slate-700 text-xs text-slate-500">
                 <strong class="text-[#d4af37]">Companion Note:</strong> The courage to question the will to truth is the first act of the free spirit. Everything that follows in BGE tests whether we can sustain that courage without collapsing into cynicism or new dogmas. Pair this section with the Preface slides: together they frame the experimental stance of the whole book. Use the visuals to anchor discussion before diving into Kaufmann’s text.
             </div>
