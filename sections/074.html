@@ -19,10 +19,19 @@
         .slide-img:hover { transform: scale(1.015); }
         .section-header { background: linear-gradient(180deg, #111827 0%, transparent 100%); }
         .philosophy-text { line-height: 1.75; }
+        .reading-prose { line-height: 1.8; }
+        .summary-section { margin-bottom: 1.25rem; }
+        .summary-label { font-weight: 600; color: #d4af37; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; }
+        .summary-body { padding-left: 0.75rem; border-left: 2px solid rgba(212,175,55,0.25); }
+        .summary-list { list-style: disc; margin: 0.5rem 0 0 1.25rem; }
+        .summary-list li { margin-bottom: 0.5rem; padding-left: 0.25rem; }
+        .quote-list { list-style: none; margin: 0.5rem 0 0 0; padding-left: 0.75rem; border-left: 3px solid rgba(212,175,55,0.4); }
+        .quote-list li { margin-bottom: 0.75rem; font-style: italic; color: #cbd5e1; }
+
     </style>
 </head>
 <body>
-    <div class="max-w-5xl mx-auto px-6 py-8">
+    <div class="max-w-5xl mx-auto px-3 sm:px-4 md:px-6 py-6 sm:py-8">
         <!-- Header / Nav -->
         <div class="flex items-center justify-between mb-8">
             <a href="../index.html" class="flex items-center gap-3 text-sm text-slate-400 hover:text-white">
@@ -40,7 +49,7 @@
             </div>
         </div>
 
-        <div class="section-header sticky top-0 z-10 pb-6 pt-2 -mx-6 px-6 mb-8 border-b border-slate-800">
+        <div class="section-header sticky top-0 z-10 pb-6 pt-2 -mx-3 sm:-mx-4 md:-mx-6 px-3 sm:px-4 md:px-6 mb-8 border-b border-slate-800">
             <div class="flex items-end gap-4">
                 <div>
                     <div class="uppercase tracking-[4px] text-xs text-[#d4af37] font-medium">FRIEDRICH NIETZSCHE • 1886 • PART FOUR</div>
@@ -52,26 +61,60 @@
         </div>
 
         <!-- Simple Modern Summary -->
-        <div class="dark-card rounded-3xl p-8 mb-6 border border-slate-700/60">
+        <div class="dark-card rounded-2xl sm:rounded-3xl p-4 sm:p-6 md:p-8 mb-6 border border-slate-700/60">
             <div class="flex items-center gap-2 mb-4">
                 <div class="h-px flex-1 bg-gradient-to-r from-transparent via-emerald-400/30 to-transparent"></div>
                 <span class="uppercase text-xs tracking-[2px] text-emerald-400 font-semibold">Simple modern summary</span>
                 <div class="h-px flex-1 bg-gradient-to-l from-transparent via-emerald-400/30 to-transparent"></div>
             </div>
-            <p class="philosophy-text text-[15px] text-slate-300 max-w-prose mx-auto leading-relaxed">
+            <p class="philosophy-text text-[15px] text-slate-300 w-full leading-relaxed">
                 When you finally reach your ideal, you automatically move past it—that is built in. Achieving a goal changes you and opens a new horizon. Staying satisfied with the old ideal means stopping your growth.
             </p>
         </div>
 
         <!-- Summary -->
-        <div class="dark-card rounded-3xl p-10 mb-10">
+        <div class="dark-card rounded-2xl sm:rounded-3xl p-4 sm:p-6 md:p-10 mb-8 sm:mb-10">
             <div class="flex items-center gap-2 mb-6">
                 <div class="h-px flex-1 bg-gradient-to-r from-transparent via-[#d4af37]/30 to-transparent"></div>
                 <span class="uppercase text-xs tracking-[2px] text-[#d4af37] font-semibold">EXTENSIVE SUMMARY (Faithful to Text)</span>
                 <div class="h-px flex-1 bg-gradient-to-l from-transparent via-[#d4af37]/30 to-transparent"></div>
             </div>
-            <div class="philosophy-text text-[15px] text-slate-300 max-w-prose mx-auto">
-                In the context of Nietzsche's Beyond Good and Evil, Section 74 provides one of the most concise and radical expressions of the principle of self-overcoming that underlies the free spirit, the revaluation of values, and the psychology of the higher man throughout the work.<br><br>The main point and argument: 'Whoever reaches his ideal transcends it eo ipso.' The Latin 'eo ipso'—'by that very fact' or 'thereby'—is essential. Attaining the ideal does not complete the process; the very act of reaching it necessarily carries the attainer beyond it. Realization changes the one who realizes: new horizons open, the former ideal appears limited or naive in light of what has been achieved, or the vital energy that drove the striving now seeks a higher or more comprehensive object. To remain content with the reached ideal is to arrest the movement of life itself.<br><br>Key themes and connections: This epigram is a pure distillation of will to power understood as perpetual self-overcoming rather than as a desire for static power or possession. It stands against every form of finality—whether the 'ideal man' of earlier philosophies, the saved soul of Christianity, the 'last man' of egalitarian comfort, or any cultural or personal achievement treated as an endpoint. It resonates with the epigrams on character and recurrence (71), the hand that kills (70), and the astronomer who refuses the 'above' (72): all point to a vision of human existence as dynamic, non-teleological in the old sense, and open to constant rank-ordering and surpassing. In the larger architecture of BGE, even the ideals the book itself proposes (the new philosopher, the revaluation) are understood as provisional targets to be left behind by those who truly reach them.<br><br>Implications: The philosopher of the future cannot be an idolater of his own creations. The artist of man must design conditions that encourage perpetual surpassing rather than fixation on any achieved type. For the individual, the test of nobility is whether one treats one's highest attained state as a platform or as a throne.<br><br>Key quote (Kaufmann): "Whoever reaches his ideal transcends it eo ipso."
+            <div class="philosophy-text reading-prose text-[15px] text-slate-300 w-full">
+                <div class="summary-section">
+                    <div class="summary-label">Context</div>
+                    <div class="summary-body">
+                        <p>Section 74 provides one of the most concise and radical expressions of the principle of self-overcoming that underlies the free spirit, the revaluation of values, and the psychology of the higher man throughout the work.</p>
+                    </div>
+                </div>
+                <div class="summary-section">
+                    <div class="summary-label">Main points</div>
+                    <div class="summary-body">
+                                                <ul class="summary-list">
+                            <li>&#x27;Whoever reaches his ideal transcends it eo ipso.&#x27; The Latin &#x27;eo ipso&#x27;—&#x27;by that very fact&#x27; or &#x27;thereby&#x27;—is essential. Attaining the ideal does not complete the process.</li>
+                            <li>the very act of reaching it necessarily carries the attainer beyond it. Realization changes the one who realizes: new horizons open, the former ideal appears limited or naive in light of what has been achieved, or the vital energy that drove the striving now seeks a higher or more comprehensive object. To remain content with the reached ideal is to arrest the movement of life itself.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="summary-section">
+                    <div class="summary-label">Key themes and connections</div>
+                    <div class="summary-body">
+                        <p>This epigram is a pure distillation of will to power understood as perpetual self-overcoming rather than as a desire for static power or possession. It stands against every form of finality—whether the 'ideal man' of earlier philosophies, the saved soul of Christianity, the 'last man' of egalitarian comfort, or any cultural or personal achievement treated as an endpoint. It resonates with the epigrams on character and recurrence (71), the hand that kills (70), and the astronomer who refuses the 'above' (72): all point to a vision of human existence as dynamic, non-teleological in the old sense, and open to constant rank-ordering and surpassing. In the larger architecture of BGE, even the ideals the book itself proposes (the new philosopher, the revaluation) are understood as provisional targets to be left behind by those who truly reach them.</p>
+                    </div>
+                </div>
+                <div class="summary-section">
+                    <div class="summary-label">Implications</div>
+                    <div class="summary-body">
+                        <p>The philosopher of the future cannot be an idolater of his own creations. The artist of man must design conditions that encourage perpetual surpassing rather than fixation on any achieved type. For the individual, the test of nobility is whether one treats one's highest attained state as a platform or as a throne.</p>
+                    </div>
+                </div>
+                <div class="summary-section">
+                    <div class="summary-label">Key Kaufmann quotes</div>
+                    <div class="summary-body">
+                                                <ul class="quote-list">
+                            <li>&ldquo;Whoever reaches his ideal transcends it eo ipso.&rdquo;</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
             <div class="mt-8 pt-6 border-t border-slate-700 text-xs text-slate-500">
                 <strong class="text-[#d4af37]">Validation:</strong> Summary drawn directly from the epigram of Section 74. Faithful to the 'eo ipso' mechanism of automatic transcendence, and to its centrality in modeling the open, self-surpassing character of the free spirit and the project of BGE. ~500 words.
