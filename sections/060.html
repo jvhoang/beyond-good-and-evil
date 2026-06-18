@@ -19,10 +19,19 @@
         .slide-img:hover { transform: scale(1.015); }
         .section-header { background: linear-gradient(180deg, #111827 0%, transparent 100%); }
         .philosophy-text { line-height: 1.75; }
+        .reading-prose { line-height: 1.8; }
+        .summary-section { margin-bottom: 1.25rem; }
+        .summary-label { font-weight: 600; color: #d4af37; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; }
+        .summary-body { padding-left: 0.75rem; border-left: 2px solid rgba(212,175,55,0.25); }
+        .summary-list { list-style: disc; margin: 0.5rem 0 0 1.25rem; }
+        .summary-list li { margin-bottom: 0.5rem; padding-left: 0.25rem; }
+        .quote-list { list-style: none; margin: 0.5rem 0 0 0; padding-left: 0.75rem; border-left: 3px solid rgba(212,175,55,0.4); }
+        .quote-list li { margin-bottom: 0.75rem; font-style: italic; color: #cbd5e1; }
+
     </style>
 </head>
 <body>
-    <div class="max-w-5xl mx-auto px-6 py-8">
+    <div class="max-w-5xl mx-auto px-3 sm:px-4 md:px-6 py-6 sm:py-8">
         <!-- Header / Nav -->
         <div class="flex items-center justify-between mb-8">
             <a href="../index.html" class="flex items-center gap-3 text-sm text-slate-400 hover:text-white">
@@ -40,7 +49,7 @@
             </div>
         </div>
 
-        <div class="section-header sticky top-0 z-10 pb-6 pt-2 -mx-6 px-6 mb-8 border-b border-slate-800">
+        <div class="section-header sticky top-0 z-10 pb-6 pt-2 -mx-3 sm:-mx-4 md:-mx-6 px-3 sm:px-4 md:px-6 mb-8 border-b border-slate-800">
             <div class="flex items-end gap-4">
                 <div>
                     <div class="uppercase tracking-[4px] text-xs text-[#d4af37] font-medium">FRIEDRICH NIETZSCHE • 1886 • PART THREE</div>
@@ -52,26 +61,51 @@
         </div>
 
         <!-- Simple Modern Summary -->
-        <div class="dark-card rounded-3xl p-8 mb-6 border border-slate-700/60">
+        <div class="dark-card rounded-2xl sm:rounded-3xl p-4 sm:p-6 md:p-8 mb-6 border border-slate-700/60">
             <div class="flex items-center gap-2 mb-4">
                 <div class="h-px flex-1 bg-gradient-to-r from-transparent via-emerald-400/30 to-transparent"></div>
                 <span class="uppercase text-xs tracking-[2px] text-emerald-400 font-semibold">Simple modern summary</span>
                 <div class="h-px flex-1 bg-gradient-to-l from-transparent via-emerald-400/30 to-transparent"></div>
             </div>
-            <p class="philosophy-text text-[15px] text-slate-300 max-w-prose mx-auto leading-relaxed">
+            <p class="philosophy-text text-[15px] text-slate-300 w-full leading-relaxed">
                 The highest love of humanity is not generic kindness—it is love for God's sake, which needs refinement and distance to avoid becoming crude. Without a higher frame, even noble feelings can turn foolish and brutal. The finest souls are the ones who almost see too much.
             </p>
         </div>
 
         <!-- Summary -->
-        <div class="dark-card rounded-3xl p-10 mb-10">
+        <div class="dark-card rounded-2xl sm:rounded-3xl p-4 sm:p-6 md:p-10 mb-8 sm:mb-10">
             <div class="flex items-center gap-2 mb-6">
                 <div class="h-px flex-1 bg-gradient-to-r from-transparent via-[#d4af37]/30 to-transparent"></div>
                 <span class="uppercase text-xs tracking-[2px] text-[#d4af37] font-semibold">EXTENSIVE SUMMARY (Faithful to Text)</span>
                 <div class="h-px flex-1 bg-gradient-to-l from-transparent via-[#d4af37]/30 to-transparent"></div>
             </div>
-            <div class="philosophy-text text-[15px] text-slate-300 max-w-prose mx-auto">
-                Context: Section 60 continues the psychological investigation of religious sentiment in Part Three of Beyond Good and Evil ("What Is Religious"). Following the analysis of superficiality and piety as fear-driven artistic falsification in Section 59, Nietzsche here isolates what has "so far been the noblest and remotest sentiment" attained by mankind: the love of mankind specifically "FOR GOD'S SAKE." This is no naive or secular humanitarianism. It requires a higher, more delicate inclination to give it proportion, salt, and refinement—otherwise it collapses into additional folly and brutishness. The section aligns with BGE's project of rank-ordering sentiments and types, preparing the instrumental use of religion by the philosopher of the future (Section 61) and the critique of pity and equality that runs throughout the book. It echoes the "pathos of distance" and the demand that even the highest moral feelings be revalued according to their service to life, strength, and the production of higher types rather than as ends in themselves. The stammering discoverer of this truth is elevated to a holy, respected figure who "has so far flown highest and gone astray in the finest fashion," underscoring Nietzsche's complex respect for rare, delicate spiritual achievements even while diagnosing their limits.<br><br>Main points/arguments: To love mankind FOR GOD'S SAKE—this has so far been the noblest and remotest sentiment to which mankind has attained. That love to mankind, without any redeeming intention in the background, is only an ADDITIONAL folly and brutishness; the inclination to this love has first to get its proportion, its delicacy, its gram of salt and sprinkling of ambergris from a higher inclination. Whoever first perceived and "experienced" this, however his tongue may have stammered as it attempted to express such a delicate matter, let him for all time be holy and respected, as the man who has so far flown highest and gone astray in the finest fashion!<br><br>Key Kaufmann quotes: 'To love mankind FOR GOD'S SAKE—this has so far been the noblest and remotest sentiment to which mankind has attained.' 'That love to mankind, without any redeeming intention in the background, is only an ADDITIONAL folly and brutishness...' 'whoever first perceived and "experienced" this, however his tongue may have stammered as it attempted to express such a delicate matter, let him for all time be holy and respected, as the man who has so far flown highest and gone astray in the finest fashion!'
+            <div class="philosophy-text reading-prose text-[15px] text-slate-300 w-full">
+                <div class="summary-section">
+                    <div class="summary-label">Context</div>
+                    <div class="summary-body">
+                        <p>Section 60 continues the psychological investigation of religious sentiment in Part Three of Beyond Good and Evil ("What Is Religious"). Following the analysis of superficiality and piety as fear-driven artistic falsification in Section 59, Nietzsche here isolates what has "so far been the noblest and remotest sentiment" attained by mankind: the love of mankind specifically "FOR GOD'S SAKE." This is no naive or secular humanitarianism. It requires a higher, more delicate inclination to give it proportion, salt, and refinement—otherwise it collapses into additional folly and brutishness. The section aligns with BGE's project of rank-ordering sentiments and types, preparing the instrumental use of religion by the philosopher of the future (Section 61) and the critique of pity and equality that runs throughout the book. It echoes the "pathos of distance" and the demand that even the highest moral feelings be revalued according to their service to life, strength, and the production of higher types rather than as ends in themselves. The stammering discoverer of this truth is elevated to a holy, respected figure who "has so far flown highest and gone astray in the finest fashion," underscoring Nietzsche's complex respect for rare, delicate spiritual achievements even while diagnosing their limits.</p>
+                    </div>
+                </div>
+                <div class="summary-section">
+                    <div class="summary-label">Main points</div>
+                    <div class="summary-body">
+                                                <ul class="summary-list">
+                            <li>To love mankind FOR GOD&#x27;S SAKE—this has so far been the noblest and remotest sentiment to which mankind has attained. That love to mankind, without any redeeming intention in the background, is only an ADDITIONAL folly and brutishness.</li>
+                            <li>the inclination to this love has first to get its proportion, its delicacy, its gram of salt and sprinkling of ambergris from a higher inclination. Whoever first perceived and &quot;experienced&quot; this, however his tongue may have stammered as it attempted to express such a delicate matter, let him for all time be holy and respected, as the man who has so far flown highest and gone astray in the finest fashion!.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="summary-section">
+                    <div class="summary-label">Key Kaufmann quotes</div>
+                    <div class="summary-body">
+                                                <ul class="quote-list">
+                            <li>&ldquo;experienced&rdquo;</li>
+                            <li>&ldquo;To love mankind FOR GOD&rdquo;</li>
+                            <li>&ldquo;That love to mankind, without any redeeming intention in the background, is only an ADDITIONAL folly and brutishness...&rdquo;</li>
+                            <li>&ldquo;whoever first perceived and &quot;experienced&quot; this, however his tongue may have stammered as it attempted to express such a delicate matter, let him for all time be holy and respected, as the man who has so far flown highest and gone astray in the finest fashion!&rdquo;</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
             <div class="mt-8 pt-6 border-t border-slate-700 text-xs text-slate-500">
                 <strong class="text-[#d4af37]">Validation:</strong> Summary drawn directly from the text of Section 60 (Kaufmann translation). Faithful to the "for God's sake" qualification, the necessity of higher inclination for proportion and delicacy, the "additional folly" diagnosis, and the elevation of the stammering perceiver as highest and finest straying. ~485 words.
