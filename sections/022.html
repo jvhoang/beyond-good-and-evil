@@ -20,11 +20,20 @@
         .slide-img:hover { transform: scale(1.015); }
         .section-header { background: linear-gradient(180deg, #111827 0%, transparent 100%); }
         .philosophy-text { line-height: 1.75; }
+        .reading-prose { line-height: 1.8; }
+        .summary-section { margin-bottom: 1.25rem; }
+        .summary-label { font-weight: 600; color: #d4af37; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; }
+        .summary-body { padding-left: 0.75rem; border-left: 2px solid rgba(212,175,55,0.25); }
+        .summary-list { list-style: disc; margin: 0.5rem 0 0 1.25rem; }
+        .summary-list li { margin-bottom: 0.5rem; padding-left: 0.25rem; }
+        .quote-list { list-style: none; margin: 0.5rem 0 0 0; padding-left: 0.75rem; border-left: 3px solid rgba(212,175,55,0.4); }
+        .quote-list li { margin-bottom: 0.75rem; font-style: italic; color: #cbd5e1; }
+
         .presentation-slide { background: #0f172a; }
     </style>
 </head>
 <body>
-    <div class="max-w-5xl mx-auto px-6 py-8">
+    <div class="max-w-5xl mx-auto px-3 sm:px-4 md:px-6 py-6 sm:py-8">
         <!-- Header / Nav -->
         <div class="flex items-center justify-between mb-8">
             <a href="../index.html" class="flex items-center gap-3 text-sm text-slate-400 hover:text-white">
@@ -42,7 +51,7 @@
             </div>
         </div>
 
-        <div class="section-header sticky top-0 z-10 pb-6 pt-2 -mx-6 px-6 mb-8 border-b border-slate-800">
+        <div class="section-header sticky top-0 z-10 pb-6 pt-2 -mx-3 sm:-mx-4 md:-mx-6 px-3 sm:px-4 md:px-6 mb-8 border-b border-slate-800">
             <div class="flex items-end gap-4">
                 <div>
                     <div class="uppercase tracking-[4px] text-xs text-[#d4af37] font-medium">FRIEDRICH NIETZSCHE • 1886</div>
@@ -53,38 +62,73 @@
         </div>
 
         <!-- Simple Modern Summary -->
-        <div class="dark-card rounded-3xl p-8 mb-6 border border-slate-700/60">
+        <div class="dark-card rounded-2xl sm:rounded-3xl p-4 sm:p-6 md:p-8 mb-6 border border-slate-700/60">
             <div class="flex items-center gap-2 mb-4">
                 <div class="h-px flex-1 bg-gradient-to-r from-transparent via-emerald-400/30 to-transparent"></div>
                 <span class="uppercase text-xs tracking-[2px] text-emerald-400 font-semibold">Simple modern summary</span>
                 <div class="h-px flex-1 bg-gradient-to-l from-transparent via-emerald-400/30 to-transparent"></div>
             </div>
-            <p class="philosophy-text text-[15px] text-slate-300 max-w-prose mx-auto leading-relaxed">
+            <p class="philosophy-text text-[15px] text-slate-300 w-full leading-relaxed">
                 When scientists talk about nature following laws, they are smuggling in democratic and anti-authority values. Nietzsche says the world is not ruled by equal laws but by power clashing everywhere all the time. Law talk is interpretation, not a fact written in the universe.
             </p>
         </div>
 
         <!-- Summary -->
-        <div class="dark-card rounded-3xl p-10 mb-10">
+        <div class="dark-card rounded-2xl sm:rounded-3xl p-4 sm:p-6 md:p-10 mb-8 sm:mb-10">
             <div class="flex items-center gap-2 mb-6">
                 <div class="h-px flex-1 bg-gradient-to-r from-transparent via-[#d4af37]/30 to-transparent"></div>
                 <span class="uppercase text-xs tracking-[2px] text-[#d4af37] font-semibold">EXTENSIVE SUMMARY</span>
                 <div class="h-px flex-1 bg-gradient-to-l from-transparent via-[#d4af37]/30 to-transparent"></div>
             </div>
-            <div class="philosophy-text text-[15px] text-slate-300 max-w-prose mx-auto">
-                Building directly on the previous sections' philological and psychological unmasking, Section 22 turns to the physicists and their proud talk of "Nature's conformity to law." Nietzsche, "as an old philologist who cannot desist from the mischief of putting his finger on bad modes of interpretation," declares it "no matter of fact, no 'text,' but rather just a naively humanitarian adjustment and perversion of meaning."
-<br><br>
-                The core argument: " 'Everywhere equality before the law—Nature is not different in that respect, nor better than we': a fine instance of secret motive, in which the vulgar antagonism to everything privileged and autocratic... is once more disguised." " 'Ni dieu, ni maitre'—that, also, is what you want." The alternative interpreter places "the unexceptionalness and unconditionalness of all 'Will to Power' before your eyes" so that "tyranny" itself seems "too human" — yet still affirms that the world has a "necessary" and "calculable" course, "NOT, however, because laws obtain in it, but because they are absolutely LACKING, and every power effects its ultimate consequences every moment."
-<br><br>
-                <span class="gold font-medium">Key quotes (Kaufmann style):</span><br>
-                "'Nature's conformity to law,' of which you physicists talk so proudly... exists only owing to your interpretation and bad 'philology.'"<br>
-                " 'Ni dieu, ni maitre'—that, also, is what you want; and therefore 'Cheers for natural law!' "<br>
-                "an interpreter who should so place the unexceptionalness and unconditionalness of all 'Will to Power' before your eyes... every power effects its ultimate consequences every moment."<br><br>
-                Philosophical implications: Science is our "tyranny via language." All "law" talk is interpretation; the free spirit sees the world as will to power — not egalitarian democratic "law" but the relentless discharge of power. This connects to the Preface's critique of dogmatism and the earlier exposure of "conformity to law" as moral prejudice. It foreshadows the free spirit's joyful affirmation of multiplicity and gradations over opposites.
-<br><br>
-                <strong>Why it matters:</strong> Contemporary science (chaos theory, complexity, quantum interpretations) increasingly sees "laws" as emergent descriptions rather than iron rails. Practical note for the reader: question every claim that "nature demands" equality or regularity — ask whose will to power (democratic instincts included) is being served by the interpretation.
+            <div class="philosophy-text reading-prose text-[15px] text-slate-300 w-full">
+                <div class="summary-section">
+                    <div class="summary-label">Context</div>
+                    <div class="summary-body">
+                        <p>Building directly on the previous sections' philological and psychological unmasking, Section 22 turns to the physicists and their proud talk of "Nature's conformity to law." Nietzsche, "as an old philologist who cannot desist from the mischief of putting his finger on bad modes of interpretation," declares it "no matter of fact, no 'text,' but rather just a naively humanitarian adjustment and perversion of meaning."</p>
+                    </div>
+                </div>
+                <div class="summary-section">
+                    <div class="summary-label">Main points</div>
+                    <div class="summary-body">
+                                                <ul class="summary-list">
+                            <li>The core argument: &quot; &#x27;Everywhere equality before the law—Nature is not different in that respect, nor better than we&#x27;: a fine instance of secret motive, in which the vulgar antagonism to everything privileged and autocratic... is once more disguised.&quot; &quot; &#x27;Ni dieu, ni maitre&#x27;—that, also, is what you want.&quot; The alternative interpreter places &quot;the unexceptionalness and unconditionalness of all &#x27;Will to Power&#x27; before your eyes&quot; so that &quot;tyranny&quot; itself seems &quot;too human&quot; — yet still affirms that the world has a &quot;necessary&quot; and &quot;calculable&quot; course, &quot;NOT, however, because laws obtain in it, but because they are absolutely LACKING, and every power effects its ultimate consequences every moment.&quot;.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="summary-section">
+                    <div class="summary-label">Key Kaufmann quotes</div>
+                    <div class="summary-body">
+                        
+                    </div>
+                </div>
+                <div class="summary-section">
+                    <div class="summary-label">Key Kaufmann quotes</div>
+                    <div class="summary-body">
+                                                <ul class="quote-list">
+                            <li>&ldquo;&#x27;Nature&#x27;s conformity to law,&#x27; of which you physicists talk so proudly... exists only owing to your interpretation and bad &#x27;philology.&#x27;&rdquo;</li>
+                            <li>&ldquo; &#x27;Ni dieu, ni maitre&#x27;—that, also, is what you want; and therefore &#x27;Cheers for natural law!&#x27; &rdquo;</li>
+                            <li>&ldquo;an interpreter who should so place the unexceptionalness and unconditionalness of all &#x27;Will to Power&#x27; before your eyes... every power effects its ultimate consequences every moment.&rdquo;</li>
+                            <li>&ldquo;s conformity to law,&rdquo;</li>
+                            <li>&ldquo;philology.&rdquo;</li>
+                            <li>&ldquo;Ni dieu, ni maitre&rdquo;</li>
+                            <li>&ldquo;Cheers for natural law!&rdquo;</li>
+                            <li>&ldquo;Will to Power&rdquo;</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="summary-section">
+                    <div class="summary-label">Philosophical implications</div>
+                    <div class="summary-body">
+                        <p>Science is our "tyranny via language." All "law" talk is interpretation; the free spirit sees the world as will to power — not egalitarian democratic "law" but the relentless discharge of power. This connects to the Preface's critique of dogmatism and the earlier exposure of "conformity to law" as moral prejudice. It foreshadows the free spirit's joyful affirmation of multiplicity and gradations over opposites.</p>
+                    </div>
+                </div>
+                <div class="summary-section">
+                    <div class="summary-label">Why it matters</div>
+                    <div class="summary-body">
+                        <p>Contemporary science (chaos theory, complexity, quantum interpretations) increasingly sees "laws" as emergent descriptions rather than iron rails. Practical note for the reader: question every claim that "nature demands" equality or regularity — ask whose will to power (democratic instincts included) is being served by the interpretation.</p>
+                    </div>
+                </div>
             </div>
-            
             <div class="mt-8 pt-6 border-t border-slate-700 text-xs text-slate-500">
                 <strong class="text-[#d4af37]">Key Context:</strong> Climactic philological turn in Part One. Directly introduces "Will to Power" as the superior interpretation, bridging critique to the positive project of Part Two.
             </div>
