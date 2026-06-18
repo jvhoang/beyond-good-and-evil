@@ -19,10 +19,19 @@
         .slide-img:hover { transform: scale(1.015); }
         .section-header { background: linear-gradient(180deg, #111827 0%, transparent 100%); }
         .philosophy-text { line-height: 1.75; }
+        .reading-prose { line-height: 1.8; }
+        .summary-section { margin-bottom: 1.25rem; }
+        .summary-label { font-weight: 600; color: #d4af37; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; }
+        .summary-body { padding-left: 0.75rem; border-left: 2px solid rgba(212,175,55,0.25); }
+        .summary-list { list-style: disc; margin: 0.5rem 0 0 1.25rem; }
+        .summary-list li { margin-bottom: 0.5rem; padding-left: 0.25rem; }
+        .quote-list { list-style: none; margin: 0.5rem 0 0 0; padding-left: 0.75rem; border-left: 3px solid rgba(212,175,55,0.4); }
+        .quote-list li { margin-bottom: 0.75rem; font-style: italic; color: #cbd5e1; }
+
     </style>
 </head>
 <body>
-    <div class="max-w-5xl mx-auto px-6 py-8">
+    <div class="max-w-5xl mx-auto px-3 sm:px-4 md:px-6 py-6 sm:py-8">
         <!-- Header / Nav -->
         <div class="flex items-center justify-between mb-8">
             <a href="../index.html" class="flex items-center gap-3 text-sm text-slate-400 hover:text-white">
@@ -40,7 +49,7 @@
             </div>
         </div>
 
-        <div class="section-header sticky top-0 z-10 pb-6 pt-2 -mx-6 px-6 mb-8 border-b border-slate-800">
+        <div class="section-header sticky top-0 z-10 pb-6 pt-2 -mx-3 sm:-mx-4 md:-mx-6 px-3 sm:px-4 md:px-6 mb-8 border-b border-slate-800">
             <div class="flex items-end gap-4">
                 <div>
                     <div class="uppercase tracking-[4px] text-xs text-[#d4af37] font-medium">FRIEDRICH NIETZSCHE • 1886 • PART FOUR</div>
@@ -52,26 +61,55 @@
         </div>
 
         <!-- Simple Modern Summary -->
-        <div class="dark-card rounded-3xl p-8 mb-6 border border-slate-700/60">
+        <div class="dark-card rounded-2xl sm:rounded-3xl p-4 sm:p-6 md:p-8 mb-6 border border-slate-700/60">
             <div class="flex items-center gap-2 mb-4">
                 <div class="h-px flex-1 bg-gradient-to-r from-transparent via-emerald-400/30 to-transparent"></div>
                 <span class="uppercase text-xs tracking-[2px] text-emerald-400 font-semibold">Simple modern summary</span>
                 <div class="h-px flex-1 bg-gradient-to-l from-transparent via-emerald-400/30 to-transparent"></div>
             </div>
-            <p class="philosophy-text text-[15px] text-slate-300 max-w-prose mx-auto leading-relaxed">
+            <p class="philosophy-text text-[15px] text-slate-300 w-full leading-relaxed">
                 As long as you treat the stars as above you in a moral or mystical sense, you are not thinking clearly. Real knowledge flattens that hierarchy and sees everything from within the world. Transcendent up there thinking blocks honest understanding.
             </p>
         </div>
 
         <!-- Summary -->
-        <div class="dark-card rounded-3xl p-10 mb-10">
+        <div class="dark-card rounded-2xl sm:rounded-3xl p-4 sm:p-6 md:p-10 mb-8 sm:mb-10">
             <div class="flex items-center gap-2 mb-6">
                 <div class="h-px flex-1 bg-gradient-to-r from-transparent via-[#d4af37]/30 to-transparent"></div>
                 <span class="uppercase text-xs tracking-[2px] text-[#d4af37] font-semibold">EXTENSIVE SUMMARY (Faithful to Text)</span>
                 <div class="h-px flex-1 bg-gradient-to-l from-transparent via-[#d4af37]/30 to-transparent"></div>
             </div>
-            <div class="philosophy-text text-[15px] text-slate-300 max-w-prose mx-auto">
-                In the context of Nietzsche's Beyond Good and Evil, Section 72 is one of the most compact and luminous of the Epigrams and Interludes in Part Four. It crystallizes a decisive shift in the orientation of knowledge that runs throughout the book: the move from transcendent, vertical, otherworldly frameworks to an immanent, perspectival, this-worldly way of seeing.<br><br>The main point and argument, presented under the striking image of 'The sage as astronomer': 'As long as you still feel the stars as something "above you," you lack the eye of knowledge.' The astronomer is the figure of the knower who looks upward yet, in the act of genuine seeing, abolishes the hierarchical distance. To feel the stars as 'above' is to retain a religious or metaphysical residue—the projection of value, meaning, or authority onto a higher realm. The true eye of knowledge levels this verticality: the celestial becomes continuous with the terrestrial; the distant is brought into the circle of human perspective and interpretation. The sage does not deny the stars but refuses to experience them as fundamentally 'up there' and therefore 'beyond.'<br><br>Key themes and connections within BGE: This epigram condenses the book's sustained attack on the 'above' in morality, religion, and traditional metaphysics (see especially Parts One, Two, and Three). It aligns with perspectivism: all seeing is from somewhere, at a certain height and distance, not from a God's-eye 'above.' It prepares the revaluation of values by insisting that new values must be created and ranked on earth, among human types, rather than derived from a transcendent source. It echoes the 'this-worldly' affirmation that will later be associated with Zarathustra and the earth. The astronomer-sage is a model for the free spirit and the psychologist who must learn to see souls and cultures without the distorting lens of upward projection.<br><br>Implications: For the philosopher of the future, knowledge is not contemplation of eternal objects located above the flux but an active, interpretive engagement that recognizes its own conditions. The 'lack' of the eye is diagnosed as a lingering attachment to the comforts of transcendence—precisely what the 'prelude to a philosophy of the future' must overcome. The epigram is at once a critique of Plato, Christianity, and any idealism that devalues the earthly, and an invitation to a more rigorous, more honest, and ultimately more affirmative form of vision.<br><br>Key quote (Kaufmann): "The sage as astronomer.—As long as you still feel the stars as something \"above you,\" you lack the eye of knowledge."
+            <div class="philosophy-text reading-prose text-[15px] text-slate-300 w-full">
+                <div class="summary-section">
+                    <div class="summary-label">Context</div>
+                    <div class="summary-body">
+                        <p>Section 72 is one of the most compact and luminous of the Epigrams and Interludes in Part Four. It crystallizes a decisive shift in the orientation of knowledge that runs throughout the book: the move from transcendent, vertical, otherworldly frameworks to an immanent, perspectival, this-worldly way of seeing.</p>
+                    </div>
+                </div>
+                <div class="summary-section">
+                    <div class="summary-label">Main points</div>
+                    <div class="summary-body">
+                                                <ul class="summary-list">
+                            <li>The main point and argument, presented under the striking image of &#x27;The sage as astronomer&#x27;: &#x27;As long as you still feel the stars as something &quot;above you,&quot; you lack the eye of knowledge.&#x27; The astronomer is the figure of the knower who looks upward yet, in the act of genuine seeing, abolishes the hierarchical distance. To feel the stars as &#x27;above&#x27; is to retain a religious or metaphysical residue—the projection of value, meaning, or authority onto a higher realm. The true eye of knowledge levels this verticality: the celestial becomes continuous with the terrestrial.</li>
+                            <li>the distant is brought into the circle of human perspective and interpretation. The sage does not deny the stars but refuses to experience them as fundamentally &#x27;up there&#x27; and so &#x27;beyond.&#x27; Key themes and connections within BGE: This epigram condenses the book&#x27;s sustained attack on the &#x27;above&#x27; in morality, religion, and traditional metaphysics (see especially Parts One, Two, and Three). It aligns with perspectivism: all seeing is from somewhere, at a certain height and distance, not from a God&#x27;s-eye &#x27;above.&#x27; It prepares the revaluation of values by insisting that new values must be created and ranked on earth, among human types, rather than derived from a transcendent source. It echoes the &#x27;this-worldly&#x27; affirmation that will later be associated with Zarathustra and the earth. The astronomer-sage is a model for the free spirit and the psychologist who must learn to see souls and cultures without the distorting lens of upward projection.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="summary-section">
+                    <div class="summary-label">Implications</div>
+                    <div class="summary-body">
+                        <p>For the philosopher of the future, knowledge is not contemplation of eternal objects located above the flux but an active, interpretive engagement that recognizes its own conditions. The 'lack' of the eye is diagnosed as a lingering attachment to the comforts of transcendence—precisely what the 'prelude to a philosophy of the future' must overcome. The epigram is at once a critique of Plato, Christianity, and any idealism that devalues the earthly, and an invitation to a more rigorous, more honest, and ultimately more affirmative form of vision.</p>
+                    </div>
+                </div>
+                <div class="summary-section">
+                    <div class="summary-label">Key Kaufmann quotes</div>
+                    <div class="summary-body">
+                                                <ul class="quote-list">
+                            <li>&ldquo;The sage as astronomer.—As long as you still feel the stars as something \&rdquo;</li>
+                            <li>&ldquo; you lack the eye of knowledge.&rdquo;</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
             <div class="mt-8 pt-6 border-t border-slate-700 text-xs text-slate-500">
                 <strong class="text-[#d4af37]">Validation:</strong> Summary drawn directly from the epigram of Section 72. Faithful to the astronomer metaphor, the diagnosis of the 'above' feeling as epistemological failure, and its role in modeling the perspectival, immanent stance central to BGE. Expanded with precise connections to the book's major themes. ~510 words.
