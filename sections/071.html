@@ -19,10 +19,19 @@
         .slide-img:hover { transform: scale(1.015); }
         .section-header { background: linear-gradient(180deg, #111827 0%, transparent 100%); }
         .philosophy-text { line-height: 1.75; }
+        .reading-prose { line-height: 1.8; }
+        .summary-section { margin-bottom: 1.25rem; }
+        .summary-label { font-weight: 600; color: #d4af37; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; }
+        .summary-body { padding-left: 0.75rem; border-left: 2px solid rgba(212,175,55,0.25); }
+        .summary-list { list-style: disc; margin: 0.5rem 0 0 1.25rem; }
+        .summary-list li { margin-bottom: 0.5rem; padding-left: 0.25rem; }
+        .quote-list { list-style: none; margin: 0.5rem 0 0 0; padding-left: 0.75rem; border-left: 3px solid rgba(212,175,55,0.4); }
+        .quote-list li { margin-bottom: 0.75rem; font-style: italic; color: #cbd5e1; }
+
     </style>
 </head>
 <body>
-    <div class="max-w-5xl mx-auto px-6 py-8">
+    <div class="max-w-5xl mx-auto px-3 sm:px-4 md:px-6 py-6 sm:py-8">
         <!-- Header / Nav -->
         <div class="flex items-center justify-between mb-8">
             <a href="../index.html" class="flex items-center gap-3 text-sm text-slate-400 hover:text-white">
@@ -40,7 +49,7 @@
             </div>
         </div>
 
-        <div class="section-header sticky top-0 z-10 pb-6 pt-2 -mx-6 px-6 mb-8 border-b border-slate-800">
+        <div class="section-header sticky top-0 z-10 pb-6 pt-2 -mx-3 sm:-mx-4 md:-mx-6 px-3 sm:px-4 md:px-6 mb-8 border-b border-slate-800">
             <div class="flex items-end gap-4">
                 <div>
                     <div class="uppercase tracking-[4px] text-xs text-[#d4af37] font-medium">FRIEDRICH NIETZSCHE • 1886 • PART FOUR</div>
@@ -52,26 +61,57 @@
         </div>
 
         <!-- Simple Modern Summary -->
-        <div class="dark-card rounded-3xl p-8 mb-6 border border-slate-700/60">
+        <div class="dark-card rounded-2xl sm:rounded-3xl p-4 sm:p-6 md:p-8 mb-6 border border-slate-700/60">
             <div class="flex items-center gap-2 mb-4">
                 <div class="h-px flex-1 bg-gradient-to-r from-transparent via-emerald-400/30 to-transparent"></div>
                 <span class="uppercase text-xs tracking-[2px] text-emerald-400 font-semibold">Simple modern summary</span>
                 <div class="h-px flex-1 bg-gradient-to-l from-transparent via-emerald-400/30 to-transparent"></div>
             </div>
-            <p class="philosophy-text text-[15px] text-slate-300 max-w-prose mx-auto leading-relaxed">
+            <p class="philosophy-text text-[15px] text-slate-300 w-full leading-relaxed">
                 If you have real character, you keep repeating the same kinds of experiences—it is your pattern, not random luck. What looks like fate is often your inner drives playing out again and again. Character and destiny are tightly linked.
             </p>
         </div>
 
         <!-- Summary -->
-        <div class="dark-card rounded-3xl p-10 mb-10">
+        <div class="dark-card rounded-2xl sm:rounded-3xl p-4 sm:p-6 md:p-10 mb-8 sm:mb-10">
             <div class="flex items-center gap-2 mb-6">
                 <div class="h-px flex-1 bg-gradient-to-r from-transparent via-[#d4af37]/30 to-transparent"></div>
                 <span class="uppercase text-xs tracking-[2px] text-[#d4af37] font-semibold">EXTENSIVE SUMMARY (Faithful to Text)</span>
                 <div class="h-px flex-1 bg-gradient-to-l from-transparent via-[#d4af37]/30 to-transparent"></div>
             </div>
-            <div class="philosophy-text text-[15px] text-slate-300 max-w-prose mx-auto">
-                In the context of Nietzsche's Beyond Good and Evil, Section 71 stands among the Epigrams and Interludes of Part Four. These short, luminous observations distill the free spirit's hard-won insights following the extended critiques and analyses of the earlier parts. The epigram addresses one of the most fundamental psychological truths in Nietzsche's thought: the inseparability of character and fate.<br><br>The main point and argument: 'If one has character, one also has one's typical experience which recurs again and again.' Character here is not superficial personality or social role but the deep, relatively fixed ensemble of drives, valuations, and instincts that constitute the individual. Because these are stable, the kinds of situations, relationships, successes, failures, and inner experiences that befall a person tend to repeat in recognizable patterns throughout life. What appears as external 'fate' or luck is largely the projection and echo of one's own inner form. The recurrence is not identical events but typical experiences—variations on the same themes that one's character solicits and sustains.<br><br>Key themes and connections: This epigram echoes the ancient insight 'character is fate' (attributed to Heraclitus) and anticipates the thought of eternal recurrence, which Nietzsche develops more fully elsewhere but which is prepared here as a psychological rather than purely cosmological idea. It stands in tension with the modern belief in radical self-reinvention and the liberal emphasis on autonomy from one's past. In BGE it supports the broader project of revaluation by insisting that genuine self-knowledge and self-overcoming begin with honest recognition of one's recurring patterns rather than fantasies of escape. The free spirit does not seek to abolish character but to know it, affirm it where noble, and transform its expressions. The noble soul reveres itself even in its fated repetitions; the weak soul resents the recurrence as external oppression.<br><br>Implications for the psychologist and the philosopher of the future: To understand human beings—whether in religion (Part Three), morality, or culture—one must discern the typical experiences that flow from given characters. The 'big hunt' requires tracking these repetitions across souls and history. For the higher type, the task is not to flee one's typical experiences (which would be futile and self-deceptive) but to use them as the very material of greatness: to make the recurrence the occasion for ever-deeper affirmation and creation. This prepares the ground for amor fati—the love of fate as one's own—and for the rigorous self-examination demanded of the new philosophers.<br><br>Key quote (Kaufmann): "If one has character, one also has one's typical experience which recurs again and again."
+            <div class="philosophy-text reading-prose text-[15px] text-slate-300 w-full">
+                <div class="summary-section">
+                    <div class="summary-label">Context</div>
+                    <div class="summary-body">
+                        <p>Section 71 stands among the Epigrams and Interludes of Part Four. These short, luminous observations distill the free spirit's hard-won insights following the extended critiques and analyses of the earlier parts. The epigram addresses one of the most fundamental psychological truths in Nietzsche's thought: the inseparability of character and fate.</p>
+                    </div>
+                </div>
+                <div class="summary-section">
+                    <div class="summary-label">Main points</div>
+                    <div class="summary-body">
+                                                <ul class="summary-list">
+                            <li>&#x27;If one has character, one also has one&#x27;s typical experience which recurs again and again.&#x27; Character here is not superficial personality or social role but the deep, relatively fixed ensemble of drives, valuations, and instincts that constitute the individual.</li>
+                            <li>Because these are stable, the kinds of situations, relationships, successes, failures, and inner experiences that befall a person tend to repeat in recognizable patterns throughout life.</li>
+                            <li>What appears as external &#x27;fate&#x27; or luck is largely the projection and echo of one&#x27;s own inner form.</li>
+                            <li>The recurrence is not identical events but typical experiences—variations on the same themes that one&#x27;s character solicits and sustains.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="summary-section">
+                    <div class="summary-label">Key themes and connections</div>
+                    <div class="summary-body">
+                        <p>This epigram echoes the ancient insight 'character is fate' (attributed to Heraclitus) and anticipates the thought of eternal recurrence, which Nietzsche develops more fully elsewhere but which is prepared here as a psychological rather than purely cosmological idea. It stands in tension with the modern belief in radical self-reinvention and the liberal emphasis on autonomy from one's past. In BGE it supports the broader project of revaluation by insisting that genuine self-knowledge and self-overcoming begin with honest recognition of one's recurring patterns rather than fantasies of escape. The free spirit does not seek to abolish character but to know it, affirm it where noble, and transform its expressions. The noble soul reveres itself even in its fated repetitions; the weak soul resents the recurrence as external oppression.</p>
+<p>Implications for the psychologist and the philosopher of the future: To understand human beings—whether in religion (Part Three), morality, or culture—one must discern the typical experiences that flow from given characters. The 'big hunt' requires tracking these repetitions across souls and history. For the higher type, the task is not to flee one's typical experiences (which would be futile and self-deceptive) but to use them as the very material of greatness: to make the recurrence the occasion for ever-deeper affirmation and creation. This prepares the ground for amor fati—the love of fate as one's own—and for the rigorous self-examination demanded of the new philosophers.</p>
+                    </div>
+                </div>
+                <div class="summary-section">
+                    <div class="summary-label">Key Kaufmann quotes</div>
+                    <div class="summary-body">
+                                                <ul class="quote-list">
+                            <li>&ldquo;If one has character, one also has one&#x27;s typical experience which recurs again and again.&rdquo;</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
             <div class="mt-8 pt-6 border-t border-slate-700 text-xs text-slate-500">
                 <strong class="text-[#d4af37]">Validation:</strong> Summary drawn directly from the epigram of Section 71. Faithful to the character-fate identity, the notion of typical (not identical) recurrence, and its function within the interludes as support for psychological realism and affirmative self-overcoming. Contextualized within BGE's larger architecture and related motifs without extraneous additions. ~525 words.
