@@ -37,13 +37,12 @@
     .section-card {
       background: #111827;
       border: 1px solid #1f2937;
-      transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      transition: border-color 0.15s ease, background-color 0.15s ease;
     }
 
     .section-card:hover {
       border-color: #d4af37;
-      box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.3), 0 4px 6px -4px rgb(0 0 0 / 0.3);
-      transform: translateY(-2px);
+      background: #151d2e;
     }
 
     .gold-accent {
@@ -101,11 +100,11 @@
       background: linear-gradient(to right, transparent, #334155, transparent);
     }
 
-    .card-short {
-      display: -webkit-box;
-      -webkit-line-clamp: 2;
-      -webkit-box-orient: vertical;
+    .card-title {
       overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      min-width: 0;
     }
 
     .professional-note {
@@ -115,18 +114,10 @@
 
     /* Mobile / readability polish for public professional presentation */
     @media (max-width: 640px) {
-      .section-card {
-        padding: 0.875rem 0.75rem;
-        min-height: 78px;
-      }
       .search-input {
         font-size: 16px; /* prevent iOS zoom */
         padding-top: 0.875rem;
         padding-bottom: 0.875rem;
-      }
-      .card-short {
-        font-size: 13px;
-        line-height: 1.35;
       }
       .group-title {
         font-size: 1.1rem;
@@ -501,6 +492,20 @@
       "251","252","253","254","255","256","257","258","259","260","261","262","263","264","265","266","267","268","269","270","271","272","273","274","275","276","277","278","279","280","281","282","283","284","285","286","287","288","289","290","291","292","293","294","295","296","297"
     ]);
 
+    // Titles pulled from section HTML pages (subtitle lines). Number-only when absent.
+    const sectionTitles = {"000":"Preface","010":"The Real and the Apparent World","011":"Kant, Faculties and the German Dream","012":"Atomism and the Soul","013":"Will to Power, Not Self-Preservation","014":"Natural Philosophy as Exposition","015":"Physiology and Sense Organs","016":"No Immediate Certainties","017":"Superstitions of Logicians","018":"Charm of Refutability","019":"The Will","045":"The Religious Character and the Saint","046":"The Faith of Pascal and the Suicide of Reason","047":"Religious Neurosis, Solitude, Fasting, and the Saint","048":"Catholicism and Northern Temperaments","059":"Superficiality, Pure Forms, and Piety as the Fear of Truth","060":"Love of Mankind for God's Sake — The Noblest and Remotest Sentiment","061":"The Philosopher's Use of Religion for Disciplining and Educating","062":"Christianity as the Most Fatal Kind of Self-Presumption","063":"The Teacher Through and Through","064":"Knowledge for Its Own Sake — The Last Snare of Morality","065":"The Charm of Knowledge and Shame","066":"Dishonesty Toward One's God","067":"Disparaging Oneself as Divine Cloak","068":"Love of One as Barbarism","069":"Memory and Pride","070":"The Hand That Kills","071":"Character and Typical Experience","072":"The Sage as Astronomer","073":"Duration of High Feelings","074":"Transcending One's Ideal","075":"The Peacock's Hidden Tail","076":"Gratitude and Purity","077":"Sexuality and the Spirit","078":"The Warlike Man in Peace","079":"Principles and Habits","080":"Self-Respect in Self-Despising","081":"A Soul That Knows It Is Loved","082":"A Matter That Becomes Clear Ceases to Concern Us","083":"Salting the Truth","084":"Pity as Hardness and Tyranny","085":"Instinct — Retrieve from the Ashes","086":"Impersonal Scorn for \"Woman\"","087":"Fettered Heart, Free Spirit","088":"Distrust of Embarrassed Clever Persons","089":"Dreadful Experiences and the Dreadful Self","090":"Melancholy Lightened by Hatred and Love","091":"Icy Cold That Burns the Touch","092":"Sacrificing for One's Good Name","093":"Affability as Excessive Contempt of Men","094":"Maturity as Reacquired Child's Play Seriousness","095":"Ladder from Shame of Immorality to Morality","096":"Parting from Life as Ulysses from Nausicaa","097":"The Great Man as Play-Actor of His Ideal","098":"Conscience That Kisses While It Bites","099":"The Disappointed One Hears Only Praise","100":"Feigning Simplicity to Relax from Fellows","101":"The Animalization of God","102":"Disenchanted by Reciprocal Love","103":"The Danger in Happiness","104":"Impotence of Love Prevents Burning Heretics","105":"Pia Fraus More Repugnant to Free Spirit","106":"Music Lets Passions Enjoy Themselves","107":"Strong Character and Will to Stupidity","108":"No Moral Phenomena, Only Moral Interpretations","114":"The Immense Expectation","115":"Woman's Play is Mediocre","116":"Rebaptizing Our Badness","117":"The Will of Other Emotions","118":"Innocence of Admiration","119":"Loathing Prevents Cleaning","120":"Sensuality Forces Weak Roots","121":"God Learned Greek","122":"Politeness of Heart","123":"Marriage Corrupts Concubinage","124":"Exulting at the Stake","125":"Changing Opinion and Its Inconvenience","126":"A Nation as Detour to Great Men","127":"Science Hostile to Woman's Shame","128":"Alluring the Senses for Abstract Truth","129":"The Devil as Oldest Friend of Knowledge","130":"Talent Decreasing Betrays the Person","131":"The Sexes Deceive Themselves","132":"Punished Best for One's Virtues","133":"Failing One's Ideal Leads to Frivolity","134":"Senses as Source of Trustworthiness","135":"Pharisaism as Condition of Being Good","136":"Good Conversation - Accoucheur or Assistant","137":"Mistakes with Scholars and Artists","138":"We Invent in Waking and Dreaming","139":"Woman More Barbarous in Revenge and Love","140":"Advice as a Riddle - Bite the Band","141":"The Belly Grounds Man","142":"The Chaste Utterance","143":"Vanity and the Mask of Difficulty","144":"Scholarly Women and the Barren Animal","145":"Adornment and the Secondary Role","146":"Monsters and the Abyss","147":"The Stick for Good and Bad Women","148":"The Conjuring Trick of Favorable Opinion","149":"Evil as Atavism of the Good","150":"Hero, Demigod, and the World","151":"Permission for One's Talent","152":"The Tree of Knowledge and Paradise","153":"Love Beyond Good and Evil","154":"Signs of Health","155":"The Tragic Sense and Sensuousness","156":"Insanity in Groups","157":"Suicide as Consolation","158":"The Tyrant in Us","159":"Repaying the Wrong Person","160":"Knowledge After Communication","161":"Poets Treat Their Experiences Shamelessly","162":"The Neighbor and the Common Good","163":"Love Brings to Light the Rare and Exceptional","164":"Sons of God Beyond Morals","165":"Bellwethers for Every Party","166":"The Mouth Lies, the Grimace Tells","167":"Intimacy: Shame and Treasure for the Vigorous","168":"Christianity Gave Eros Poison","169":"Talking Much About Oneself as Concealment","170":"Praise Intrudes More Than Blame","171":"Pity Ludicrous to the Man of Knowledge","172":"Love of Mankind Embraces One — Never Confess","173":"Hate Arises Only from Esteem","174":"Utilitarians Love the Utile as Vehicle Only","175":"One Loves One's Desires, Not the Thing Desired","176":"Vanity Offends Only When It Offends Our Own","177":"Nobody Has Been Sufficiently Truthful","178":"Disbelief in the Follies of Clever Men","179":"Consequences Seize Us Indifferent to Reform","180":"Innocence in Lying as Good Faith","181":"It Is Inhuman to Bless When Cursed","182":"The Familiarity of Superiors Embitters","183":"The Wound of Lost Belief","184":"Haughtiness of Kindness","185":"“I Am Not a Match for Him”","186":"Toward a Typology of Moralities","187":"Moralities as Sign Language of the Affects","188":"Morality as Tyranny and Long Obedience","189":"Fasts, Industriousness, and Sublimation","190":"Plato’s Socratism and the Chimera","191":"Instinct, Reason, and the Triumph of the Herd","192":"We Are Accustomed to Lie","193":"The History of Moral Sensations","194":"What Is Good? Different Answers","195":"The Jewish Contribution to Morals","196":"The Moral Fanatic and the Saint","197":"The Criminal and Punishment","198":"The Herd’s Fear of the Neighbor","199":"The Imperative of the Herd","200":"The Mixed European","206":"The Scholar's Experience","216":"Learning to Despise When We Love Best","217":"The Moralist’s Resentment and the Blessing of Forgetfulness","218":"The Rule Against the Exception: Study the Mediocrity","219":"Moral Judgment as the Revenge of the Shallow","220":"The Myth of the Disinterested","221":"Moralities Must Bow Before Order of Rank","222":"Sympathy as Self-Contempt","223":"The Hybrid European and the Carnival of Costumes","224":"The Historical Sense: Our Ignoble Virtue","225":"The Discipline of Suffering — Pity Against Pity","226":"We Immoralists — Men of Duty in Delicate Chains","227":"Honesty — Our Remaining Virtue, Hardened with Devils","228":"Moral Philosophy Has Been Tedious — The Utilitarians","229":"Cruelty Transfigured — A Drop in Every Desire for Knowledge","230":"The Fundamental Will of the Spirit — Translate Man Back to Nature","231":"The Granite of Spiritual Fate — My Truths About Woman","232":"Woman and the Eternal Feminine — Enlightenment as Uglifying","233":"Corruption of Instincts — Comical Women as Counter-Arguments","234":"Stupidity in the Kitchen — Woman as Cook Retards Mankind","235":"The Motherliest and Wisest Remark — Follies That Give Great Pleasure","236":"What Dante and Goethe Believed About Women","237":"Seven Apophthegms for Women","238":"The Fundamental Problem of \"Man and Woman\"","239":"Woman, Democracy, and the Loss of Modesty","240":"Wagner, the Meistersinger, and the German Soul","241":"Good Europeans and Atavistic Patriotism","242":"The Democratic Movement as Physiological Process","243":"The Sun, Hercules, and Good Europeans","244":"Vivisection of the German Soul","245":"Mozart, Beethoven, and the End of a Taste","246":"The Torment of German Books and the Third Ear","247":"How Little German Style Has to Do with Sound","248":"Two Kinds of Genius: Begetting and Fructifying","249":"Every People Has Its Own Tartuffery","250":"What Europe Owes to the Jews","251":"The Jews and the European Problem","252":"The English: Unphilosophical Race","253":"Truths for Mediocre Minds: England and Modern Ideas","254":"France: The Hidden School of Taste and Noblesse","255":"Precautions Against German Music: Toward a Super-European Art","256":"Europe Wants to Be One: The Good Europeans","257":"Elevation of the Type \"Man\" Through Aristocratic Society","258":"The Aristocratic Conscience: Sacrifice and Justification","259":"Life Is Will to Power: The Rejection of Non-Exploitation as Fundamental Principle","260":"Master Morality and Slave Morality","261":"The 'Good' Man of Slave Morality as the Safe and Harmless","262":"Breeding Strong Types and the Victory of Mediocrity","263":"The Instinct for Rank as the Mark of Nobility","264":"Heredity Cannot Be Effaced — The Problem of Race","265":"Egoism as the Essence of the Noble Soul","266":"True Esteem for Him Who Does Not Look Out for Himself","267":"Make Thy Heart Small — The Self-Dwarfing Tendency of Modern Civilization","268":"Common Experiences and the Drive Toward the Ignoble","269":"The Psychologist's Sympathy and the Ruination of Higher Men","270":"Suffering Makes Noble — Reverence for the Mask","271":"Signs of Nobility: Duties, Responsibilities, Prerogatives","272":"The Problem of Those Who Wait","273":"The Striver's Use of Others and Poison of Solitude","274":"Who Does Not Wish to See the Height Looks at the Low","275":"Injury and Loss — The Nobler Soul's Greater Danger","276":"The Eternal Too Late of the Completed","277":"The Wanderer Asks for Another Mask","278":"Men of Profound Sadness Seize Happiness Jealously","279":"Bad! He Goes Back Like One About to Make a Great Spring","280":"The After-Dinner Nausea of the Spiritual","281":"Praise Only Where One Does Not Agree","282":"Harpies Over the Table — The After-Dinner Nausea","283":"The Greatest Events and Thoughts Are Longest in Being Comprehended","284":"The Reverse Kind of Man Who Looks Downwards","285":"What Is Noble? The Belief Which Decides","286":"Enthusiasm as the Subtlest Means of Deceiving","287":"The Recluse — Twilight of the Cave","288":"Every Deep Thinker Is More Afraid of Being Understood Than Misunderstood","289":"Man, the Complex Mendacious Animal","290":"A Philosopher: The Storm Pregnant with New Lightnings","291":"A Man Who Is a MASTER by Nature","292":"The Olympian Vice — Golden Laughter","293":"The Genius of the Heart — Dionysus","294":"The Recluse Doubts Ultimate Opinions","295":"The Written Thoughts of Afternoon — Evil Thoughts of Solitude","296":"The Last Section — Return to the Heights","297":"Aftersong"};
+
+    let liveCount = 0;
+
+    function getItemTitle(item) {
+      if (sectionTitles[item.padded]) return sectionTitles[item.padded];
+      const short = item.short || '';
+      if (short.startsWith('Aphorism ')) return null;
+      if (short.startsWith('Preface — ')) return 'Preface';
+      if (short.startsWith('From High Mountains')) return 'Aftersong';
+      return short;
+    }
+
     function generateItems(start, end, overrides = {}) {
       const items = [];
       for (let i = start; i <= end; i++) {
@@ -519,16 +524,16 @@
       container.innerHTML = '';
 
       let totalItems = 0;
-      let liveCount = 0;
+      liveCount = 0;
 
       tocData.forEach((groupData, groupIndex) => {
         const groupEl = document.createElement('div');
-        groupEl.className = `group-wrapper mb-9 ${groupIndex === tocData.length - 1 ? 'mb-4' : ''}`;
+        groupEl.className = `group-wrapper mb-5 ${groupIndex === tocData.length - 1 ? 'mb-3' : ''}`;
         groupEl.dataset.group = groupData.group.toLowerCase();
 
         // Group header
         const header = document.createElement('div');
-        header.className = 'flex items-baseline justify-between mb-3 px-1';
+        header.className = 'flex items-baseline justify-between mb-2 px-1';
         header.innerHTML = `
           <div>
             <h3 class="group-title text-emerald-400 font-semibold tracking-[-0.015em]">${groupData.group}</h3>
@@ -540,57 +545,34 @@
         `;
         groupEl.appendChild(header);
 
-        // Cards grid
+        // Cards grid — compact: number + title only
         const grid = document.createElement('div');
-        grid.className = 'grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-2.5';
+        grid.className = 'grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-8 gap-1.5';
 
         groupData.items.forEach(item => {
           totalItems++;
 
           const isAvailable = availableSections.has(item.padded);
+          const title = getItemTitle(item);
           const card = document.createElement('a');
-          card.className = `section-card rounded-2xl px-4 py-3.5 toc-item flex flex-col justify-between min-h-[86px] ${isAvailable ? '' : 'opacity-60'}`;
+          card.className = `section-card rounded-lg px-2 py-1.5 toc-item flex items-center gap-2 min-w-0 ${isAvailable ? 'group' : 'opacity-60 pointer-events-none'}`;
           card.dataset.num = item.num;
-          card.dataset.short = item.short.toLowerCase();
+          card.dataset.short = (title || item.short || '').toLowerCase();
           card.dataset.group = groupData.group.toLowerCase();
+          if (title) card.title = `${item.padded} — ${title}`;
 
           if (isAvailable) {
             const href = `https://jvhoang.github.io/beyond-good-and-evil/sections/${item.padded}.html`;
             card.href = href;
             card.target = '_blank';
             card.rel = 'noopener';
-            card.innerHTML = `
-              <div class="flex items-start justify-between gap-3">
-                <div>
-                  <div class="section-num text-amber-400 text-[13px] font-semibold tracking-[-0.3px]">§${item.padded}</div>
-                  <div class="card-short text-[13.5px] leading-snug text-slate-200 mt-1.5 pr-1 group-hover:text-white">
-                    ${item.short}
-                  </div>
-                </div>
-                <div class="flex-shrink-0 pt-0.5">
-                  <i class="fa-solid fa-arrow-up-right-from-square text-[10px] text-slate-600 group-hover:text-amber-400 transition-colors"></i>
-                </div>
-              </div>
-              <div class="mt-3 flex justify-end">
-                <div class="text-[9px] font-medium tracking-widest text-slate-500 group-hover:text-amber-400/80 transition-colors">OPEN PRESENTATION →</div>
-              </div>
-            `;
             liveCount++;
-          } else {
-            card.innerHTML = `
-              <div class="flex items-start justify-between gap-3">
-                <div>
-                  <div class="section-num text-amber-400 text-[13px] font-semibold tracking-[-0.3px]">§${item.padded}</div>
-                  <div class="card-short text-[13.5px] leading-snug text-slate-200 mt-1.5 pr-1">
-                    ${item.short}
-                  </div>
-                </div>
-              </div>
-              <div class="mt-3 flex justify-end">
-                <div class="text-[9px] font-medium tracking-widest text-amber-400/70">IN PROGRESS — full presentation + images deploying soon</div>
-              </div>
-            `;
           }
+
+          card.innerHTML = `
+            <span class="section-num text-amber-400 text-[11px] font-semibold shrink-0 w-[2.25rem]">${item.padded}</span>
+            ${title ? `<span class="card-title text-[11px] leading-tight text-slate-300 group-hover:text-white">${title}</span>` : ''}
+          `;
 
           grid.appendChild(card);
         });
