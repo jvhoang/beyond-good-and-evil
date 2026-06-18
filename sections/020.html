@@ -20,11 +20,20 @@
         .slide-img:hover { transform: scale(1.015); }
         .section-header { background: linear-gradient(180deg, #111827 0%, transparent 100%); }
         .philosophy-text { line-height: 1.75; }
+        .reading-prose { line-height: 1.8; }
+        .summary-section { margin-bottom: 1.25rem; }
+        .summary-label { font-weight: 600; color: #d4af37; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; }
+        .summary-body { padding-left: 0.75rem; border-left: 2px solid rgba(212,175,55,0.25); }
+        .summary-list { list-style: disc; margin: 0.5rem 0 0 1.25rem; }
+        .summary-list li { margin-bottom: 0.5rem; padding-left: 0.25rem; }
+        .quote-list { list-style: none; margin: 0.5rem 0 0 0; padding-left: 0.75rem; border-left: 3px solid rgba(212,175,55,0.4); }
+        .quote-list li { margin-bottom: 0.75rem; font-style: italic; color: #cbd5e1; }
+
         .presentation-slide { background: #0f172a; }
     </style>
 </head>
 <body>
-    <div class="max-w-5xl mx-auto px-6 py-8">
+    <div class="max-w-5xl mx-auto px-3 sm:px-4 md:px-6 py-6 sm:py-8">
         <!-- Header / Nav -->
         <div class="flex items-center justify-between mb-8">
             <a href="../index.html" class="flex items-center gap-3 text-sm text-slate-400 hover:text-white">
@@ -42,7 +51,7 @@
             </div>
         </div>
 
-        <div class="section-header sticky top-0 z-10 pb-6 pt-2 -mx-6 px-6 mb-8 border-b border-slate-800">
+        <div class="section-header sticky top-0 z-10 pb-6 pt-2 -mx-3 sm:-mx-4 md:-mx-6 px-3 sm:px-4 md:px-6 mb-8 border-b border-slate-800">
             <div class="flex items-end gap-4">
                 <div>
                     <div class="uppercase tracking-[4px] text-xs text-[#d4af37] font-medium">FRIEDRICH NIETZSCHE • 1886</div>
@@ -53,38 +62,67 @@
         </div>
 
         <!-- Simple Modern Summary -->
-        <div class="dark-card rounded-3xl p-8 mb-6 border border-slate-700/60">
+        <div class="dark-card rounded-2xl sm:rounded-3xl p-4 sm:p-6 md:p-8 mb-6 border border-slate-700/60">
             <div class="flex items-center gap-2 mb-4">
                 <div class="h-px flex-1 bg-gradient-to-r from-transparent via-emerald-400/30 to-transparent"></div>
                 <span class="uppercase text-xs tracking-[2px] text-emerald-400 font-semibold">Simple modern summary</span>
                 <div class="h-px flex-1 bg-gradient-to-l from-transparent via-emerald-400/30 to-transparent"></div>
             </div>
-            <p class="philosophy-text text-[15px] text-slate-300 max-w-prose mx-auto leading-relaxed">
+            <p class="philosophy-text text-[15px] text-slate-300 w-full leading-relaxed">
                 Philosophers think they are discovering new ideas, but they are usually repeating patterns shaped by language and culture. Grammar and body type quietly steer how whole civilizations think. Even the most independent minds are still running on old mental tracks.
             </p>
         </div>
 
         <!-- Summary -->
-        <div class="dark-card rounded-3xl p-10 mb-10">
+        <div class="dark-card rounded-2xl sm:rounded-3xl p-4 sm:p-6 md:p-10 mb-8 sm:mb-10">
             <div class="flex items-center gap-2 mb-6">
                 <div class="h-px flex-1 bg-gradient-to-r from-transparent via-[#d4af37]/30 to-transparent"></div>
                 <span class="uppercase text-xs tracking-[2px] text-[#d4af37] font-semibold">EXTENSIVE SUMMARY</span>
                 <div class="h-px flex-1 bg-gradient-to-l from-transparent via-[#d4af37]/30 to-transparent"></div>
             </div>
-            <div class="philosophy-text text-[15px] text-slate-300 max-w-prose mx-auto">
-                In Part One's dismantling of philosophers' prejudices (right after the Preface's charge of "noble puerilism" in dogmatism and sections exposing the will to truth and the 'I' as fictions), Section 20 reveals a deeper layer: philosophical ideas are never "optional or autonomously evolving." They "grow up in connection and relationship with each other" like "the collective members of the fauna of a Continent." Under an "invisible spell," even the most independent thinkers "always revolve once more in the same orbit."
-<br><br>
-                The core insight: "Their thinking is, in fact, far less a discovery than a re-recognizing, a remembering, a return and a home-coming to a far-off, ancient common-household of the soul." Philosophizing is "a kind of atavism of the highest order." Where there is "affinity of language," "everything is prepared at the outset for a similar development and succession of philosophical systems." The "spell of certain grammatical functions is ultimately also the spell of PHYSIOLOGICAL valuations and racial conditions." Philosophers in Ural-Altaic languages, where the subject is "least developed," see the world differently from Indo-Germans.
-<br><br>
-                <span class="gold font-medium">Key quotes (Kaufmann style):</span><br>
-                "philosophizing is so far a kind of atavism of the highest order."<br>
-                "the spell of certain grammatical functions is ultimately also the spell of PHYSIOLOGICAL valuations and racial conditions."<br>
-                "philosophers within the domain of the Ural-Altaic languages ... look otherwise 'into the world'."<br><br>
-                Philosophical implications: Even the most "critical or systematic" minds are bound by unconscious linguistic and bodily schemas. The supposed freedom of the thinker is itself a product of grammar and physiology. This directly prepares the free spirit's task (Part Two) of recognizing these constraints in order to experiment beyond them, and it deepens the critique of the atomistic 'I' and causa sui from nearby sections. 
-<br><br>
-                <strong>Why it matters:</strong> In an age of global philosophy and AI language models, Nietzsche reminds us that our deepest categories (subject, object, cause, being) may be provincial artifacts of Indo-European grammar. The free spirit cultivates suspicion toward the very structure of his own sentences.
+            <div class="philosophy-text reading-prose text-[15px] text-slate-300 w-full">
+                <div class="summary-section">
+                    <div class="summary-label">Context</div>
+                    <div class="summary-body">
+                        <p>In Part One's dismantling of philosophers' prejudices (right after the Preface's charge of "noble puerilism" in dogmatism and sections exposing the will to truth and the 'I' as fictions), Section 20 reveals a deeper layer: philosophical ideas are never "optional or autonomously evolving." They "grow up in connection and relationship with each other" like "the collective members of the fauna of a Continent." Under an "invisible spell," even the most independent thinkers "always revolve once more in the same orbit."</p>
+                    </div>
+                </div>
+                <div class="summary-section">
+                    <div class="summary-label">Core insight</div>
+                    <div class="summary-body">
+                        <p>"Their thinking is, in fact, far less a discovery than a re-recognizing, a remembering, a return and a home-coming to a far-off, ancient common-household of the soul." Philosophizing is "a kind of atavism of the highest order." Where there is "affinity of language," "everything is prepared at the outset for a similar development and succession of philosophical systems." The "spell of certain grammatical functions is ultimately also the spell of PHYSIOLOGICAL valuations and racial conditions." Philosophers in Ural-Altaic languages, where the subject is "least developed," see the world differently from Indo-Germans.</p>
+                    </div>
+                </div>
+                <div class="summary-section">
+                    <div class="summary-label">Key Kaufmann quotes</div>
+                    <div class="summary-body">
+                        
+                    </div>
+                </div>
+                <div class="summary-section">
+                    <div class="summary-label">Key Kaufmann quotes</div>
+                    <div class="summary-body">
+                                                <ul class="quote-list">
+                            <li>&ldquo;philosophizing is so far a kind of atavism of the highest order.&rdquo;</li>
+                            <li>&ldquo;the spell of certain grammatical functions is ultimately also the spell of PHYSIOLOGICAL valuations and racial conditions.&rdquo;</li>
+                            <li>&ldquo;philosophers within the domain of the Ural-Altaic languages ... look otherwise &#x27;into the world&#x27;.&rdquo;</li>
+                            <li>&ldquo;into the world&rdquo;</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="summary-section">
+                    <div class="summary-label">Philosophical implications</div>
+                    <div class="summary-body">
+                        <p>Even the most "critical or systematic" minds are bound by unconscious linguistic and bodily schemas. The supposed freedom of the thinker is itself a product of grammar and physiology. This directly prepares the free spirit's task (Part Two) of recognizing these constraints in order to experiment beyond them, and it deepens the critique of the atomistic 'I' and causa sui from nearby sections.</p>
+                    </div>
+                </div>
+                <div class="summary-section">
+                    <div class="summary-label">Why it matters</div>
+                    <div class="summary-body">
+                        <p>In an age of global philosophy and AI language models, Nietzsche reminds us that our deepest categories (subject, object, cause, being) may be provincial artifacts of Indo-European grammar. The free spirit cultivates suspicion toward the very structure of his own sentences.</p>
+                    </div>
+                </div>
             </div>
-            
             <div class="mt-8 pt-6 border-t border-slate-700 text-xs text-slate-500">
                 <strong class="text-[#d4af37]">Key Context:</strong> Early in Part One's psychological turn. Connects language, body, and the "common-household of the soul" to the will to power and perspectivism that follow.
             </div>
@@ -112,7 +150,7 @@
         <div class="dark-card rounded-3xl p-8 text-center border border-slate-700 mb-8">
             <div class="text-[#d4af37] text-xs uppercase tracking-widest mb-2">VISUAL SLIDES</div>
             <h2 class="serif text-3xl tracking-tight mb-4">Slides in Preparation</h2>
-            <p class="text-slate-300 max-w-prose mx-auto">Visual presentation slides for this section are in preparation. The extensive summary, key quotes, and modern insights above provide the full companion experience alongside the Kaufmann text.</p>
+            <p class="text-slate-300 w-full">Visual presentation slides for this section are in preparation. The extensive summary, key quotes, and modern insights above provide the full companion experience alongside the Kaufmann text.</p>
             <p class="mt-4 text-xs text-slate-500">Images will be added as they become available. All analysis and reference content is complete and ready for use.</p>
         </div>
 
