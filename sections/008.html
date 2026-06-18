@@ -19,10 +19,19 @@
         .slide-img:hover { transform: scale(1.015); }
         .section-header { background: linear-gradient(180deg, #111827 0%, transparent 100%); }
         .philosophy-text { line-height: 1.75; }
+        .reading-prose { line-height: 1.8; }
+        .summary-section { margin-bottom: 1.25rem; }
+        .summary-label { font-weight: 600; color: #d4af37; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; }
+        .summary-body { padding-left: 0.75rem; border-left: 2px solid rgba(212,175,55,0.25); }
+        .summary-list { list-style: disc; margin: 0.5rem 0 0 1.25rem; }
+        .summary-list li { margin-bottom: 0.5rem; padding-left: 0.25rem; }
+        .quote-list { list-style: none; margin: 0.5rem 0 0 0; padding-left: 0.75rem; border-left: 3px solid rgba(212,175,55,0.4); }
+        .quote-list li { margin-bottom: 0.75rem; font-style: italic; color: #cbd5e1; }
+
     </style>
 </head>
 <body>
-    <div class="max-w-5xl mx-auto px-6 py-8">
+    <div class="max-w-5xl mx-auto px-3 sm:px-4 md:px-6 py-6 sm:py-8">
         <!-- Header / Nav -->
         <div class="flex items-center justify-between mb-8">
             <a href="../index.html" class="flex items-center gap-3 text-sm text-slate-400 hover:text-white">
@@ -40,7 +49,7 @@
             </div>
         </div>
 
-        <div class="section-header sticky top-0 z-10 pb-6 pt-2 -mx-6 px-6 mb-8 border-b border-slate-800">
+        <div class="section-header sticky top-0 z-10 pb-6 pt-2 -mx-3 sm:-mx-4 md:-mx-6 px-3 sm:px-4 md:px-6 mb-8 border-b border-slate-800">
             <div class="flex items-end gap-4">
                 <div>
                     <div class="uppercase tracking-[4px] text-xs text-[#d4af37] font-medium">FRIEDRICH NIETZSCHE • 1886</div>
@@ -51,36 +60,52 @@
         </div>
 
         <!-- Simple Modern Summary -->
-        <div class="dark-card rounded-3xl p-8 mb-6 border border-slate-700/60">
+        <div class="dark-card rounded-2xl sm:rounded-3xl p-4 sm:p-6 md:p-8 mb-6 border border-slate-700/60">
             <div class="flex items-center gap-2 mb-4">
                 <div class="h-px flex-1 bg-gradient-to-r from-transparent via-emerald-400/30 to-transparent"></div>
                 <span class="uppercase text-xs tracking-[2px] text-emerald-400 font-semibold">Simple modern summary</span>
                 <div class="h-px flex-1 bg-gradient-to-l from-transparent via-emerald-400/30 to-transparent"></div>
             </div>
-            <p class="philosophy-text text-[15px] text-slate-300 max-w-prose mx-auto leading-relaxed">
+            <p class="philosophy-text text-[15px] text-slate-300 w-full leading-relaxed">
                 Every philosophy eventually reveals its real conviction—the stubborn belief that drove it all along. The fancy arguments are often just decoration on top of that core assumption. Nietzsche compares it to a beautiful strong donkey showing up after all the rhetoric.
             </p>
         </div>
 
         <!-- Summary -->
-        <div class="dark-card rounded-3xl p-10 mb-10">
+        <div class="dark-card rounded-2xl sm:rounded-3xl p-4 sm:p-6 md:p-10 mb-8 sm:mb-10">
             <div class="flex items-center gap-2 mb-6">
                 <div class="h-px flex-1 bg-gradient-to-r from-transparent via-[#d4af37]/30 to-transparent"></div>
                 <span class="uppercase text-xs tracking-[2px] text-[#d4af37] font-semibold">EXTENSIVE SUMMARY</span>
                 <div class="h-px flex-1 bg-gradient-to-l from-transparent via-[#d4af37]/30 to-transparent"></div>
             </div>
-            <div class="philosophy-text text-[15px] text-slate-300 max-w-prose mx-auto">
-                “There is a point in every philosophy at which the ‘conviction’ of the philosopher appears on the scene; or, to put it in the words of an ancient mystery: Adventavit asinus, Pulcher et fortissimus.”
-
-                The ass arrives—beautiful and strongest. At a certain point the philosopher’s stubborn, perhaps irrational or vital core steps forward, no longer disguised by the elegant arguments that have been built around it. Conviction is not the result of philosophy; it is its starting point and driver. The logical dress is often only the post-hoc costume for an ass that was already there.
-            <br><br>
-                <strong>Key Insight:</strong> Every philosophy has a moment when the “conviction” appears in all its naked power. What the philosopher calls reason or dialectic is frequently the beautiful harness placed upon a more fundamental, often unexamined drive or prejudice that “arrives” and takes command.
-            <br><br>
-                <strong>Connection to the book:</strong> This humorous, sharp puncture echoes the instinctual basis (Section 3), the personal confession (Section 6), and the malice of idealists (Section 7). It reinforces skepticism toward systems while pointing forward to the will to power: convictions are expressions of commanding drives. Morality itself may rest upon such “asses” dressed in solemn language.
-            <br><br>
-                <strong>Why it matters:</strong> We still witness philosophies, ideologies, and scientific programs in which a core conviction or temperament arrives early and is then elaborately rationalized. For readers of the Kaufmann translation, Nietzsche’s image of the ass is both deflationary and liberating: once you see the beautiful strong ass arrive, you can ask more honestly what work the philosophy is really doing—and whether a stronger, more conscious conviction might be cultivated instead.
+            <div class="philosophy-text reading-prose text-[15px] text-slate-300 w-full">
+                <div class="summary-section">
+                    <div class="summary-label">Key Kaufmann quotes</div>
+                    <div class="summary-body">
+                                                <ul class="quote-list">
+                            <li>&ldquo;There is a point in every philosophy at which the ‘conviction’ of the philosopher appears on the scene; or, to put it in the words of an ancient mystery: Adventavit asinus, Pulcher et fortissimus.&rdquo;</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="summary-section">
+                    <div class="summary-label">Key insight</div>
+                    <div class="summary-body">
+                        <p>Every philosophy has a moment when the “conviction” appears in all its naked power. What the philosopher calls reason or dialectic is frequently the beautiful harness placed upon a more fundamental, often unexamined drive or prejudice that “arrives” and takes command.</p>
+                    </div>
+                </div>
+                <div class="summary-section">
+                    <div class="summary-label">Connection to the book</div>
+                    <div class="summary-body">
+                        <p>This humorous, sharp puncture echoes the instinctual basis (Section 3), the personal confession (Section 6), and the malice of idealists (Section 7). It reinforces skepticism toward systems while pointing forward to the will to power: convictions are expressions of commanding drives. Morality itself may rest upon such “asses” dressed in solemn language.</p>
+                    </div>
+                </div>
+                <div class="summary-section">
+                    <div class="summary-label">Why it matters</div>
+                    <div class="summary-body">
+                        <p>We still witness philosophies, ideologies, and scientific programs in which a core conviction or temperament arrives early and is then elaborately rationalized. For readers of the Kaufmann translation, Nietzsche’s image of the ass is both deflationary and liberating: once you see the beautiful strong ass arrive, you can ask more honestly what work the philosophy is really doing—and whether a stronger, more conscious conviction might be cultivated instead.</p>
+                    </div>
+                </div>
             </div>
-            
             <div class="mt-8 pt-6 border-t border-slate-700 text-xs text-slate-500">
                 <strong class="text-[#d4af37]">Companion Note:</strong> The ass arrives—beautiful and strongest. This short aphorism is one of BGE’s most memorable deflationary images. Use the slides to enjoy the comic yet serious revelation; then read the surrounding sections in Kaufmann with an ear for the moment the conviction steps out from behind the arguments.
             </div>
