@@ -19,10 +19,19 @@
         .slide-img:hover { transform: scale(1.015); }
         .section-header { background: linear-gradient(180deg, #111827 0%, transparent 100%); }
         .philosophy-text { line-height: 1.75; }
+        .reading-prose { line-height: 1.8; }
+        .summary-section { margin-bottom: 1.25rem; }
+        .summary-label { font-weight: 600; color: #d4af37; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; }
+        .summary-body { padding-left: 0.75rem; border-left: 2px solid rgba(212,175,55,0.25); }
+        .summary-list { list-style: disc; margin: 0.5rem 0 0 1.25rem; }
+        .summary-list li { margin-bottom: 0.5rem; padding-left: 0.25rem; }
+        .quote-list { list-style: none; margin: 0.5rem 0 0 0; padding-left: 0.75rem; border-left: 3px solid rgba(212,175,55,0.4); }
+        .quote-list li { margin-bottom: 0.75rem; font-style: italic; color: #cbd5e1; }
+
     </style>
 </head>
 <body>
-    <div class="max-w-5xl mx-auto px-6 py-8">
+    <div class="max-w-5xl mx-auto px-3 sm:px-4 md:px-6 py-6 sm:py-8">
         <!-- Header / Nav -->
         <div class="flex items-center justify-between mb-8">
             <a href="../index.html" class="flex items-center gap-3 text-sm text-slate-400 hover:text-white">
@@ -40,7 +49,7 @@
             </div>
         </div>
 
-        <div class="section-header sticky top-0 z-10 pb-6 pt-2 -mx-6 px-6 mb-8 border-b border-slate-800">
+        <div class="section-header sticky top-0 z-10 pb-6 pt-2 -mx-3 sm:-mx-4 md:-mx-6 px-3 sm:px-4 md:px-6 mb-8 border-b border-slate-800">
             <div class="flex items-end gap-4">
                 <div>
                     <div class="uppercase tracking-[4px] text-xs text-[#d4af37] font-medium">FRIEDRICH NIETZSCHE • 1886 • PART THREE</div>
@@ -52,30 +61,48 @@
         </div>
 
         <!-- Simple Modern Summary -->
-        <div class="dark-card rounded-3xl p-8 mb-6 border border-slate-700/60">
+        <div class="dark-card rounded-2xl sm:rounded-3xl p-4 sm:p-6 md:p-8 mb-6 border border-slate-700/60">
             <div class="flex items-center gap-2 mb-4">
                 <div class="h-px flex-1 bg-gradient-to-r from-transparent via-emerald-400/30 to-transparent"></div>
                 <span class="uppercase text-xs tracking-[2px] text-emerald-400 font-semibold">Simple modern summary</span>
                 <div class="h-px flex-1 bg-gradient-to-l from-transparent via-emerald-400/30 to-transparent"></div>
             </div>
-            <p class="philosophy-text text-[15px] text-slate-300 max-w-prose mx-auto leading-relaxed">
+            <p class="philosophy-text text-[15px] text-slate-300 w-full leading-relaxed">
                 Religious style differs by culture: Latin peoples stay attached to Catholic vibes even when skeptical, while northern Europeans are generally weaker at religion. Piety is not a universal choice—it reflects deep cultural instincts. One-size-fits-all religion or secularism misses that.
             </p>
         </div>
 
         <!-- Summary -->
-        <div class="dark-card rounded-3xl p-10 mb-10">
+        <div class="dark-card rounded-2xl sm:rounded-3xl p-4 sm:p-6 md:p-10 mb-8 sm:mb-10">
             <div class="flex items-center gap-2 mb-6">
                 <div class="h-px flex-1 bg-gradient-to-r from-transparent via-[#d4af37]/30 to-transparent"></div>
                 <span class="uppercase text-xs tracking-[2px] text-[#d4af37] font-semibold">EXTENSIVE SUMMARY (Faithful to Text)</span>
                 <div class="h-px flex-1 bg-gradient-to-l from-transparent via-[#d4af37]/30 to-transparent"></div>
             </div>
-            <div class="philosophy-text text-[15px] text-slate-300 max-w-prose mx-auto">
-                Context: Nietzsche turns to national and racial differences in religious capacity. Latin races (especially the French) remain attached to Catholicism even in their skeptics (Comte, Sainte-Beuve, Renan); their piety is "niaiserie" yet charming. Northern races have "poor talents" for religion because of their barbarous origins (with the Celtic exception). Unbelief itself can be a return to the race. The section is a note on how religious forms express deep racial instincts rather than universal truths.
-<br><br>
-                Main points/arguments: Latin attachment to Catholicism persists even among skeptics; Northerners are poor at religion from their origins; piety in French skeptics is a fascinating antipodes; "we have POOR talents for it."
-<br><br>
-                <strong>Modern companion insight:</strong> Religious and cultural temperaments are not freely chosen universal options but expressions of deeper group instincts and history. Attempts to impose one religious or secular model globally ignore these differences at their peril. The "good European" must navigate rather than moralize these realities.
+            <div class="philosophy-text reading-prose text-[15px] text-slate-300 w-full">
+                <div class="summary-section">
+                    <div class="summary-label">Context</div>
+                    <div class="summary-body">
+                        <p>Nietzsche turns to national and racial differences in religious capacity. Latin races (especially the French) remain attached to Catholicism even in their skeptics (Comte, Sainte-Beuve, Renan); their piety is "niaiserie" yet charming. Northern races have "poor talents" for religion because of their barbarous origins (with the Celtic exception). Unbelief itself can be a return to the race. The section is a note on how religious forms express deep racial instincts rather than universal truths.</p>
+                    </div>
+                </div>
+                <div class="summary-section">
+                    <div class="summary-label">Main points</div>
+                    <div class="summary-body">
+                                                <ul class="summary-list">
+                            <li>Latin attachment to Catholicism persists even among skeptics.</li>
+                            <li>Northerners are poor at religion from their origins.</li>
+                            <li>piety in French skeptics is a fascinating antipodes.</li>
+                            <li>&quot;we have POOR talents for it.&quot;.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="summary-section">
+                    <div class="summary-label">Modern companion insight</div>
+                    <div class="summary-body">
+                        <p>Religious and cultural temperaments are not freely chosen universal options but expressions of deeper group instincts and history. Attempts to impose one religious or secular model globally ignore these differences at their peril. The "good European" must navigate rather than moralize these realities.</p>
+                    </div>
+                </div>
             </div>
             <div class="mt-8 pt-6 border-t border-slate-700 text-xs text-slate-500">
                 <strong class="text-[#d4af37]">Validation:</strong> Summary faithful to text of Section 48. Key elements (Latin vs Northern religious talents, French skeptics' piety, racial return via unbelief) directly from the aphorism.
