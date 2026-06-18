@@ -19,10 +19,19 @@
         .slide-img:hover { transform: scale(1.015); }
         .section-header { background: linear-gradient(180deg, #111827 0%, transparent 100%); }
         .philosophy-text { line-height: 1.75; }
+        .reading-prose { line-height: 1.8; }
+        .summary-section { margin-bottom: 1.25rem; }
+        .summary-label { font-weight: 600; color: #d4af37; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; }
+        .summary-body { padding-left: 0.75rem; border-left: 2px solid rgba(212,175,55,0.25); }
+        .summary-list { list-style: disc; margin: 0.5rem 0 0 1.25rem; }
+        .summary-list li { margin-bottom: 0.5rem; padding-left: 0.25rem; }
+        .quote-list { list-style: none; margin: 0.5rem 0 0 0; padding-left: 0.75rem; border-left: 3px solid rgba(212,175,55,0.4); }
+        .quote-list li { margin-bottom: 0.75rem; font-style: italic; color: #cbd5e1; }
+
     </style>
 </head>
 <body>
-    <div class="max-w-5xl mx-auto px-6 py-8">
+    <div class="max-w-5xl mx-auto px-3 sm:px-4 md:px-6 py-6 sm:py-8">
         <!-- Header / Nav -->
         <div class="flex items-center justify-between mb-8">
             <a href="../index.html" class="flex items-center gap-3 text-sm text-slate-400 hover:text-white">
@@ -40,7 +49,7 @@
             </div>
         </div>
 
-        <div class="section-header sticky top-0 z-10 pb-6 pt-2 -mx-6 px-6 mb-8 border-b border-slate-800">
+        <div class="section-header sticky top-0 z-10 pb-6 pt-2 -mx-3 sm:-mx-4 md:-mx-6 px-3 sm:px-4 md:px-6 mb-8 border-b border-slate-800">
             <div class="flex items-end gap-4">
                 <div>
                     <div class="uppercase tracking-[4px] text-xs text-[#d4af37] font-medium">FRIEDRICH NIETZSCHE • 1886</div>
@@ -51,38 +60,68 @@
         </div>
 
         <!-- Simple Modern Summary -->
-        <div class="dark-card rounded-3xl p-8 mb-6 border border-slate-700/60">
+        <div class="dark-card rounded-2xl sm:rounded-3xl p-4 sm:p-6 md:p-8 mb-6 border border-slate-700/60">
             <div class="flex items-center gap-2 mb-4">
                 <div class="h-px flex-1 bg-gradient-to-r from-transparent via-emerald-400/30 to-transparent"></div>
                 <span class="uppercase text-xs tracking-[2px] text-emerald-400 font-semibold">Simple modern summary</span>
                 <div class="h-px flex-1 bg-gradient-to-l from-transparent via-emerald-400/30 to-transparent"></div>
             </div>
-            <p class="philosophy-text text-[15px] text-slate-300 max-w-prose mx-auto leading-relaxed">
+            <p class="philosophy-text text-[15px] text-slate-300 w-full leading-relaxed">
                 Every great philosophy is secretly the autobiography of whoever wrote it. A moral purpose—not pure curiosity—is usually what grows the whole system. Knowledge serves deeper drives; it does not lead them.
             </p>
         </div>
 
         <!-- Summary -->
-        <div class="dark-card rounded-3xl p-10 mb-10">
+        <div class="dark-card rounded-2xl sm:rounded-3xl p-4 sm:p-6 md:p-10 mb-8 sm:mb-10">
             <div class="flex items-center gap-2 mb-6">
                 <div class="h-px flex-1 bg-gradient-to-r from-transparent via-[#d4af37]/30 to-transparent"></div>
                 <span class="uppercase text-xs tracking-[2px] text-[#d4af37] font-semibold">EXTENSIVE SUMMARY</span>
                 <div class="h-px flex-1 bg-gradient-to-l from-transparent via-[#d4af37]/30 to-transparent"></div>
             </div>
-            <div class="philosophy-text text-[15px] text-slate-300 max-w-prose mx-auto">
-                “It has gradually become clear to me what every great philosophy up till now has consisted of—namely, the confession of its originator, and a species of involuntary and unconscious auto-biography; and moreover that the moral (or immoral) purpose in every philosophy has constituted the true vital germ out of which the entire plant has always grown.”
-
-                To understand the abstrusest metaphysical assertions, ask first: “What morality do they (or does he) aim at?”
-
-                Nietzsche does not believe an “impulse to knowledge” is the father of philosophy. Another impulse has made use of knowledge (and mistaken knowledge) as an instrument. Every impulse is imperious and attempts to philosophize, to look upon itself as the ultimate end of existence.
-            <br><br>
-                <strong>Key Insight:</strong> Every great philosophy is the involuntary and unconscious autobiography of its originator. The moral (or immoral) purpose is the true vital germ; knowledge serves the drive, not the other way around. Even the scholar’s “impulse to knowledge” is usually a small, independent clock-work subordinated to other interests.
-            <br><br>
-                <strong>Connection to the book:</strong> This personalizes and radicalizes the critique of the Preface and Sections 1–5. It undercuts the pose of philosophical objectivity and prepares the ground for the will to power as the fundamental interpretive key. Later sections on the will, causality, and the noble vs. slave moralities will return to this insight: thought is always in the service of life and its commanding drives.
-            <br><br>
-                <strong>Why it matters:</strong> We still treat philosophical and scientific systems as floating free of their authors’ drives, temperaments, and power interests. For readers of the Kaufmann translation, Nietzsche offers a diagnostic tool: when you encounter a grand system, ask what impulse it serves and what mode of life it would install as sovereign. The free spirit reads philosophies as symptoms before accepting them as truths.
+            <div class="philosophy-text reading-prose text-[15px] text-slate-300 w-full">
+                <div class="summary-section">
+                    <div class="summary-label">Key Kaufmann quotes</div>
+                    <div class="summary-body">
+                                                <ul class="quote-list">
+                            <li>&ldquo;It has gradually become clear to me what every great philosophy up till now has consisted of—namely, the confession of its originator, and a species of involuntary and unconscious auto-biography; and moreover that the moral (or immoral) purpose in every philosophy has constituted the true vital germ out of which the entire plant has always grown.&rdquo;</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="summary-section">
+                    <div class="summary-label">Context</div>
+                    <div class="summary-body">
+                        <p>To understand the abstrusest metaphysical assertions, ask first: “What morality do they (or does he) aim at?”</p>
+                    </div>
+                </div>
+                <div class="summary-section">
+                    <div class="summary-label">Main points</div>
+                    <div class="summary-body">
+                                                <ul class="summary-list">
+                            <li>Nietzsche does not believe an “impulse to knowledge” is the father of philosophy.</li>
+                            <li>Another impulse has made use of knowledge (and mistaken knowledge) as an instrument.</li>
+                            <li>Every impulse is imperious and attempts to philosophize, to look upon itself as the ultimate end of existence.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="summary-section">
+                    <div class="summary-label">Key insight</div>
+                    <div class="summary-body">
+                        <p>Every great philosophy is the involuntary and unconscious autobiography of its originator. The moral (or immoral) purpose is the true vital germ; knowledge serves the drive, not the other way around. Even the scholar’s “impulse to knowledge” is usually a small, independent clock-work subordinated to other interests.</p>
+                    </div>
+                </div>
+                <div class="summary-section">
+                    <div class="summary-label">Connection to the book</div>
+                    <div class="summary-body">
+                        <p>This personalizes and radicalizes the critique of the Preface and Sections 1–5. It undercuts the pose of philosophical objectivity and prepares the ground for the will to power as the fundamental interpretive key. Later sections on the will, causality, and the noble vs. slave moralities will return to this insight: thought is always in the service of life and its commanding drives.</p>
+                    </div>
+                </div>
+                <div class="summary-section">
+                    <div class="summary-label">Why it matters</div>
+                    <div class="summary-body">
+                        <p>We still treat philosophical and scientific systems as floating free of their authors’ drives, temperaments, and power interests. For readers of the Kaufmann translation, Nietzsche offers a diagnostic tool: when you encounter a grand system, ask what impulse it serves and what mode of life it would install as sovereign. The free spirit reads philosophies as symptoms before accepting them as truths.</p>
+                    </div>
+                </div>
             </div>
-            
             <div class="mt-8 pt-6 border-t border-slate-700 text-xs text-slate-500">
                 <strong class="text-[#d4af37]">Companion Note:</strong> Every philosophy—including Nietzsche’s—is a personal confession in involuntary autobiography. Use the slides to practice reading between the lines; then apply the same suspicious generosity to the Kaufmann text itself. The aim is not dismissal but clearer vision of the drives at work.
             </div>
