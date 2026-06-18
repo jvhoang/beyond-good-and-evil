@@ -20,11 +20,20 @@
         .slide-img:hover { transform: scale(1.015); }
         .section-header { background: linear-gradient(180deg, #111827 0%, transparent 100%); }
         .philosophy-text { line-height: 1.75; }
+        .reading-prose { line-height: 1.8; }
+        .summary-section { margin-bottom: 1.25rem; }
+        .summary-label { font-weight: 600; color: #d4af37; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; }
+        .summary-body { padding-left: 0.75rem; border-left: 2px solid rgba(212,175,55,0.25); }
+        .summary-list { list-style: disc; margin: 0.5rem 0 0 1.25rem; }
+        .summary-list li { margin-bottom: 0.5rem; padding-left: 0.25rem; }
+        .quote-list { list-style: none; margin: 0.5rem 0 0 0; padding-left: 0.75rem; border-left: 3px solid rgba(212,175,55,0.4); }
+        .quote-list li { margin-bottom: 0.75rem; font-style: italic; color: #cbd5e1; }
+
         .presentation-slide { background: #0f172a; }
     </style>
 </head>
 <body>
-    <div class="max-w-5xl mx-auto px-6 py-8">
+    <div class="max-w-5xl mx-auto px-3 sm:px-4 md:px-6 py-6 sm:py-8">
         <!-- Header / Nav -->
         <div class="flex items-center justify-between mb-8">
             <a href="../index.html" class="flex items-center gap-3 text-sm text-slate-400 hover:text-white">
@@ -42,7 +51,7 @@
             </div>
         </div>
 
-        <div class="section-header sticky top-0 z-10 pb-6 pt-2 -mx-6 px-6 mb-8 border-b border-slate-800">
+        <div class="section-header sticky top-0 z-10 pb-6 pt-2 -mx-3 sm:-mx-4 md:-mx-6 px-3 sm:px-4 md:px-6 mb-8 border-b border-slate-800">
             <div class="flex items-end gap-4">
                 <div>
                     <div class="uppercase tracking-[4px] text-xs text-[#d4af37] font-medium">FRIEDRICH NIETZSCHE • 1886</div>
@@ -53,36 +62,51 @@
         </div>
 
         <!-- Simple Modern Summary -->
-        <div class="dark-card rounded-3xl p-8 mb-6 border border-slate-700/60">
+        <div class="dark-card rounded-2xl sm:rounded-3xl p-4 sm:p-6 md:p-8 mb-6 border border-slate-700/60">
             <div class="flex items-center gap-2 mb-4">
                 <div class="h-px flex-1 bg-gradient-to-r from-transparent via-emerald-400/30 to-transparent"></div>
                 <span class="uppercase text-xs tracking-[2px] text-emerald-400 font-semibold">Simple modern summary</span>
                 <div class="h-px flex-1 bg-gradient-to-l from-transparent via-emerald-400/30 to-transparent"></div>
             </div>
-            <p class="philosophy-text text-[15px] text-slate-300 max-w-prose mx-auto leading-relaxed">
+            <p class="philosophy-text text-[15px] text-slate-300 w-full leading-relaxed">
                 A theory that is open to being proven wrong is actually more interesting than one that is locked shut. That is partly why debates about free will never die—smart people keep coming back to challenge it. Good thinkers prefer ideas that can be tested, not doctrines that cannot be touched.
             </p>
         </div>
 
         <!-- Summary -->
-        <div class="dark-card rounded-3xl p-10 mb-10">
+        <div class="dark-card rounded-2xl sm:rounded-3xl p-4 sm:p-6 md:p-10 mb-8 sm:mb-10">
             <div class="flex items-center gap-2 mb-6">
                 <div class="h-px flex-1 bg-gradient-to-r from-transparent via-[#d4af37]/30 to-transparent"></div>
                 <span class="uppercase text-xs tracking-[2px] text-[#d4af37] font-semibold">EXTENSIVE SUMMARY</span>
                 <div class="h-px flex-1 bg-gradient-to-l from-transparent via-[#d4af37]/30 to-transparent"></div>
             </div>
-            <div class="philosophy-text text-[15px] text-slate-300 max-w-prose mx-auto">
-                Section 18 offers one of the wittiest and most concise observations in Part One. In the context of Nietzsche's larger assault on dogmatism and the "will to system," it highlights a paradoxical virtue: the attractiveness of theories that remain open to refutation. Coming after the deep critiques of the subject, causality, and logical superstitions, this short aphorism celebrates intellectual honesty and vitality over the closed, self-confirming comfort of unfalsifiable dogmas. It foreshadows the experimental, "perhaps"-oriented stance of the free spirit and philosophers of the future.<br><br>
-                
-                The core is brief and pointed: "It is certainly not the least charm of a theory that it is refutable; it is precisely thereby that it attracts the more subtle minds. It seems that the hundred-times-refuted theory of the 'free will' owes its persistence to this charm alone; some one is always appearing who feels himself strong enough to refute it."<br><br>
-                
-                <span class="gold font-medium">Key quotes:</span><br>
-                "It is certainly not the least charm of a theory that it is refutable; it is precisely thereby that it attracts the more subtle minds."<br>
-                "It seems that the hundred-times-refuted theory of the 'free will' owes its persistence to this charm alone; some one is always appearing who feels himself strong enough to refute it."<br><br>
-                
-                Philosophical implications for truth/morality/power/free spirit: Closed, irrefutable systems repel the best minds and signal a lack of integrity or fear of life. The persistence of "free will" as a theory, despite repeated refutations, illustrates how the possibility of being overturned keeps ideas alive and interesting. For morality, this suggests that rigid, unfalsifiable moral dogmas (whether traditional or modern) are less vital than open, contestable interpretations. The free spirit values the strength to propose and defend views that invite — and survive or yield to — rigorous challenge. Power here is the power of attraction through intellectual honesty rather than through unassailable authority. It advances BGE by modeling the anti-dogmatic, life-affirming intellectual temperament the book seeks to cultivate.
+            <div class="philosophy-text reading-prose text-[15px] text-slate-300 w-full">
+                <div class="summary-section">
+                    <div class="summary-label">Context</div>
+                    <div class="summary-body">
+                        <p>Section 18 offers one of the wittiest and most concise observations in Part One. In the context of Nietzsche's larger assault on dogmatism and the "will to system," it highlights a paradoxical virtue: the attractiveness of theories that remain open to refutation. Coming after the deep critiques of the subject, causality, and logical superstitions, this short aphorism celebrates intellectual honesty and vitality over the closed, self-confirming comfort of unfalsifiable dogmas. It foreshadows the experimental, "perhaps"-oriented stance of the free spirit and philosophers of the future.</p>
+                    </div>
+                </div>
+                <div class="summary-section">
+                    <div class="summary-label">Main points</div>
+                    <div class="summary-body">
+                                                <ul class="summary-list">
+                            <li>The core is brief and pointed: &quot;It is certainly not the least charm of a theory that it is refutable.</li>
+                            <li>it is precisely thereby that it attracts the more subtle minds. It seems that the hundred-times-refuted theory of the &#x27;free will&#x27; owes its persistence to this charm alone.</li>
+                            <li>some one is always appearing who feels himself strong enough to refute it.&quot;.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="summary-section">
+                    <div class="summary-label">key quotes</div>
+                    <div class="summary-body">
+                                                <ul class="quote-list">
+                            <li>&ldquo;It is certainly not the least charm of a theory that it is refutable; it is precisely thereby that it attracts the more subtle minds.&rdquo;</li>
+                            <li>&ldquo;It seems that the hundred-times-refuted theory of the &#x27;free will&#x27; owes its persistence to this charm alone; some one is always appearing who feels himself strong enough to refute it.&rdquo;</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            
             <div class="mt-8 pt-6 border-t border-slate-700 text-xs text-slate-500">
                 <strong class="text-[#d4af37]">Key Context:</strong> Part One of BGE. Emphasizes intellectual integrity, the value of openness, and the experimental spirit against the will to system and dogmatism.
             </div>
