@@ -20,16 +20,25 @@
         .slide-img:hover { transform: scale(1.015); }
         .section-header { background: linear-gradient(180deg, #111827 0%, transparent 100%); }
         .philosophy-text { line-height: 1.75; }
+        .reading-prose { line-height: 1.8; }
+        .summary-section { margin-bottom: 1.25rem; }
+        .summary-label { font-weight: 600; color: #d4af37; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; }
+        .summary-body { padding-left: 0.75rem; border-left: 2px solid rgba(212,175,55,0.25); }
+        .summary-list { list-style: disc; margin: 0.5rem 0 0 1.25rem; }
+        .summary-list li { margin-bottom: 0.5rem; padding-left: 0.25rem; }
+        .quote-list { list-style: none; margin: 0.5rem 0 0 0; padding-left: 0.75rem; border-left: 3px solid rgba(212,175,55,0.4); }
+        .quote-list li { margin-bottom: 0.75rem; font-style: italic; color: #cbd5e1; }
+
     </style>
 </head>
 <body>
-<div class="max-w-5xl mx-auto px-6 py-8">
+<div class="max-w-5xl mx-auto px-3 sm:px-4 md:px-6 py-6 sm:py-8">
     <div class="flex items-center justify-between mb-8">
         <a href="../index.html" class="flex items-center gap-3 text-sm text-slate-400 hover:text-white"><span>←</span> <span class="font-medium tracking-widest text-xs">BACK TO MASTER INDEX</span></a>
         <div class="flex items-center gap-3 text-xs font-mono text-[#d4af37]"><span>205</span> <span class="text-slate-600">/</span> <span class="text-slate-400">PART SIX: WE SCHOLARS</span></div>
         <div class="flex gap-2"><a href="204.html" class="nav-btn px-4 py-1.5 text-xs rounded-lg border border-slate-700 hover:border-[#d4af37]/60 text-slate-300">← 204</a><a href="206.html" class="nav-btn px-4 py-1.5 text-xs rounded-lg border border-slate-700 hover:border-[#d4af37]/60 text-slate-300">206 →</a></div>
     </div>
-    <div class="section-header sticky top-0 z-10 pb-6 pt-2 -mx-6 px-6 mb-8 border-b border-slate-800">
+    <div class="section-header sticky top-0 z-10 pb-6 pt-2 -mx-3 sm:-mx-4 md:-mx-6 px-3 sm:px-4 md:px-6 mb-8 border-b border-slate-800">
         <div class="flex items-baseline gap-4">
             <span class="text-6xl font-serif gold tracking-tighter">205</span>
             <div>
@@ -38,25 +47,41 @@
             </div>
         </div>
     </div>        <!-- Simple Modern Summary -->
-        <div class="dark-card rounded-3xl p-8 mb-6 border border-slate-700/60">
+        <div class="dark-card rounded-2xl sm:rounded-3xl p-4 sm:p-6 md:p-8 mb-6 border border-slate-700/60">
             <div class="flex items-center gap-2 mb-4">
                 <div class="h-px flex-1 bg-gradient-to-r from-transparent via-emerald-400/30 to-transparent"></div>
                 <span class="uppercase text-xs tracking-[2px] text-emerald-400 font-semibold">Simple modern summary</span>
                 <div class="h-px flex-1 bg-gradient-to-l from-transparent via-emerald-400/30 to-transparent"></div>
             </div>
-            <p class="philosophy-text text-[15px] text-slate-300 max-w-prose mx-auto leading-relaxed">
+            <p class="philosophy-text text-[15px] text-slate-300 w-full leading-relaxed">
                 Modern culture makes real philosophers rarer by rewarding specialists, critics, and safe thinkers instead. Democracy, historicism, and academia all push against commanding minds. The age favors workers of thought, not lawmakers of value.
             </p>
         </div>
 
     <div class="mb-10">
         <div class="uppercase text-xs tracking-[2px] text-[#d4af37] font-semibold mb-3">EXTENSIVE SUMMARY</div>
-        <div class="dark-card rounded-2xl p-8 text-[15px] philosophy-text text-slate-300">
-            <p class="mb-4">Section 205 examines the obstacles that stand in the way of the emergence of genuine philosophers in the present age. The scholar, the scientist, the critic, the historical sense, even democracy itself conspire to make the philosopher’s task more difficult and his appearance rarer. The conditions that favor the specialist and the worker make the comprehensive, commanding, risk-taking philosopher less likely.</p>
-            <p class="mb-4">The section explores how the modern emphasis on specialization, the democratic suspicion of rank, the hypertrophy of the historical sense, and the demand for usefulness all act against the solitary, legislating, experimental spirit required for philosophy in the highest sense. The philosopher needs solitude, danger, and the capacity to command himself and others; modern conditions erode these.</p>
-            <p>Modern companion relevance: The pressures of publish-or-perish, funding tied to immediate utility, interdisciplinary “collaboration” that rewards conformity, and cultural suspicion of any claim to superior insight all reproduce the dangers Nietzsche diagnosed. The free spirit must deliberately cultivate the conditions—solitude, hardness, long-range vision—that allow the philosopher type to re-emerge. ~250 words.</p>
+        <div class="dark-card rounded-2xl p-4 sm:p-6 md:p-8 text-[15px] philosophy-text text-slate-300">
+            <div class="philosophy-text reading-prose text-[15px] text-slate-300 w-full">
+                <div class="summary-section">
+                    <div class="summary-label">Context</div>
+                    <div class="summary-body">
+                        <p>Section 205 examines the obstacles that stand in the way of the emergence of genuine philosophers in the present age. The scholar, the scientist, the critic, the historical sense, even democracy itself conspire to make the philosopher’s task more difficult and his appearance rarer. The conditions that favor the specialist and the worker make the comprehensive, commanding, risk-taking philosopher less likely.</p>
+                    </div>
+                </div>
+                <div class="summary-section">
+                    <div class="summary-label">Main points</div>
+                    <div class="summary-body">
+                        <ul class="summary-list"><li>The section explores how the modern emphasis on specialization, the democratic suspicion of rank, the hypertrophy of the historical sense, and the demand for usefulness all act against the solitary, legislating, experimental spirit required for philosophy in the highest sense. The philosopher needs solitude, danger, and the capacity to command himself and others</li><li>modern conditions erode these.</li></ul>
+                    </div>
+                </div>
+                <div class="summary-section">
+                    <div class="summary-label">Modern companion insight</div>
+                    <div class="summary-body">
+                        <p>The pressures of publish-or-perish, funding tied to immediate utility, interdisciplinary “collaboration” that rewards conformity, and cultural suspicion of any claim to superior insight all reproduce the dangers Nietzsche diagnosed. The free spirit must deliberately cultivate the conditions—solitude, hardness, long-range vision—that allow the philosopher type to re-emerge. ~250 words.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
     <div class="mb-6 flex items-baseline justify-between">
         <div><span class="uppercase text-xs tracking-[3px] text-[#d4af37]">PRESENTATION SLIDES</span><h2 class="serif text-4xl tracking-tight">Visual Slides</h2></div>
         <div class="text-xs text-slate-500">Dark Academia • Minimalist Keynote Style</div>
