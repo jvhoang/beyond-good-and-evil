@@ -19,10 +19,18 @@
         .slide-img:hover { transform: scale(1.015); }
         .section-header { background: linear-gradient(180deg, #111827 0%, transparent 100%); }
         .philosophy-text { line-height: 1.75; }
+        .reading-prose { line-height: 1.8; }
+        .summary-section { margin-bottom: 1.25rem; }
+        .summary-label { font-weight: 600; color: #d4af37; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; }
+        .summary-body { padding-left: 0.75rem; border-left: 2px solid rgba(212,175,55,0.25); }
+        .summary-list { list-style: disc; margin: 0.5rem 0 0 1.25rem; }
+        .summary-list li { margin-bottom: 0.5rem; padding-left: 0.25rem; }
+        .quote-list { list-style: none; margin: 0.5rem 0 0 0; padding-left: 0.75rem; border-left: 3px solid rgba(212,175,55,0.4); }
+        .quote-list li { margin-bottom: 0.75rem; font-style: italic; color: #cbd5e1; }
     </style>
 </head>
 <body>
-    <div class="max-w-5xl mx-auto px-6 py-8">
+    <div class="max-w-5xl mx-auto px-3 sm:px-4 md:px-6 py-6 sm:py-8">
         <!-- Header / Nav -->
         <div class="flex items-center justify-between mb-8">
             <a href="../index.html" class="flex items-center gap-3 text-sm text-slate-400 hover:text-white">
@@ -40,7 +48,7 @@
             </div>
         </div>
 
-        <div class="section-header sticky top-0 z-10 pb-6 pt-2 -mx-6 px-6 mb-8 border-b border-slate-800">
+        <div class="section-header sticky top-0 z-10 pb-6 pt-2 -mx-3 sm:-mx-4 md:-mx-6 px-3 sm:px-4 md:px-6 mb-8 border-b border-slate-800">
             <div class="flex items-end gap-4">
                 <div>
                     <div class="uppercase tracking-[4px] text-xs text-[#d4af37] font-medium">FRIEDRICH NIETZSCHE • 1886 • PART THREE</div>
@@ -52,30 +60,49 @@
         </div>
 
         <!-- Simple Modern Summary -->
-        <div class="dark-card rounded-3xl p-8 mb-6 border border-slate-700/60">
+        <div class="dark-card rounded-2xl sm:rounded-3xl p-4 sm:p-6 md:p-8 mb-6 border border-slate-700/60">
             <div class="flex items-center gap-2 mb-4">
                 <div class="h-px flex-1 bg-gradient-to-r from-transparent via-emerald-400/30 to-transparent"></div>
                 <span class="uppercase text-xs tracking-[2px] text-emerald-400 font-semibold">Simple modern summary</span>
                 <div class="h-px flex-1 bg-gradient-to-l from-transparent via-emerald-400/30 to-transparent"></div>
             </div>
-            <p class="philosophy-text text-[15px] text-slate-300 max-w-prose mx-auto leading-relaxed">
+            <p class="philosophy-text text-[15px] text-slate-300 w-full leading-relaxed">
                 The saint looks miraculous, but Nietzsche treats that as religious neurosis—extreme swings between pleasure and guilt, often tied to solitude, fasting, and celibacy. Philosophers and artists romanticize this type, yet it is more about will and psychology than holiness. Do not confuse self-torture with spiritual greatness.
             </p>
         </div>
 
         <!-- Summary -->
-        <div class="dark-card rounded-3xl p-10 mb-10">
+        <div class="dark-card rounded-2xl sm:rounded-3xl p-4 sm:p-6 md:p-10 mb-8 sm:mb-10">
             <div class="flex items-center gap-2 mb-6">
                 <div class="h-px flex-1 bg-gradient-to-r from-transparent via-[#d4af37]/30 to-transparent"></div>
                 <span class="uppercase text-xs tracking-[2px] text-[#d4af37] font-semibold">EXTENSIVE SUMMARY (Faithful to Text)</span>
                 <div class="h-px flex-1 bg-gradient-to-l from-transparent via-[#d4af37]/30 to-transparent"></div>
             </div>
-            <div class="philosophy-text text-[15px] text-slate-300 max-w-prose mx-auto">
-                Context: Continuing the psychological hunt from Sec 45, Nietzsche examines the "religious neurosis" manifested in the saint through the classic ascetic practices of solitude, fasting, and sexual abstinence. He asks "how is the saint possible?" and finds the answer in the "miracle" of sudden swings between sensuality and penitence (possibly epileptic in origin). Philosophers and the masses alike have been fascinated by the saint as a "higher" type, yet this fascination rests on errors of moralistic psychology. Schopenhauer and Wagner are invoked as modern examples of the will-negation ideal embodied in the saint. The free spirit must approach such phenomena with philological caution and without supernatural inflation.
-<br><br>
-                Main points/arguments: Religious neurosis is tied to the three practices; symptoms include violent swings from sensuality to penitence; the saint appears as a "miracle" of opposites only because of faulty interpretation; philosophers (Schopenhauer) and artists (Wagner, Kundry in Parsifal) were captivated by this type; the saint is ultimately a will-to-power phenomenon, not a negation of it.
-<br><br>
-                <strong>Modern companion insight:</strong> The section speaks directly to modern "wellness" culture, extreme fasting/diet regimens, celebrity public penance and redemption arcs, and ascetic subcultures (from tech bro monk-mode to online purity spirals). It cautions against romanticizing self-denial or personal "transformations" without rigorous, non-moralistic analysis.
+            <div class="philosophy-text reading-prose text-[15px] text-slate-300 w-full">
+                <div class="summary-section">
+                    <div class="summary-label">Context</div>
+                    <div class="summary-body">
+                        <p>Building on Section 45's psychological investigation, Nietzsche looks at what he calls "religious neurosis" in the saint—the extreme ascetic lifestyle built on solitude, fasting, and sexual abstinence. His central question is simple: how does someone become a saint? His answer: the saint looks miraculous only because we misread violent mood swings between sensual excess and harsh self-punishment (Nietzsche even suggests epilepsy may play a role). Philosophers and ordinary people have long romanticized the saint as a "higher" human type, but that admiration rests on bad moral psychology. Schopenhauer and Wagner stand in as modern examples of the saint's ideal of denying the will. A free spirit should study these figures carefully—without treating them as supernatural.</p>
+                    </div>
+                </div>
+                <div class="summary-section">
+                    <div class="summary-label">Main points</div>
+                    <div class="summary-body">
+                        <ul class="summary-list">
+                            <li>Religious neurosis clusters around solitude, fasting, and sexual abstinence.</li>
+                            <li>Its signature symptom is violent swings between sensuality and penitence.</li>
+                            <li>The saint seems like a "miracle of opposites" only when we interpret psychology badly.</li>
+                            <li>Thinkers like Schopenhauer and artists like Wagner (especially Kundry in <em>Parsifal</em>) were obsessed with this type.</li>
+                            <li>The saint is really a form of will to power—not a genuine negation of will.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="summary-section">
+                    <div class="summary-label">Modern companion insight</div>
+                    <div class="summary-body">
+                        <p>This section speaks directly to modern wellness culture, extreme fasting and diet fads, celebrity apology-and-redemption arcs, and ascetic subcultures (from tech-bro "monk mode" to online purity spirals). It warns against romanticizing self-denial or dramatic personal "transformations" without clear-eyed, non-moralistic analysis.</p>
+                    </div>
+                </div>
             </div>
             <div class="mt-8 pt-6 border-t border-slate-700 text-xs text-slate-500">
                 <strong class="text-[#d4af37]">Validation:</strong> Summary faithful to text of Section 47. Key elements (solitude/fasting/abstinence, swings/possible epilepsy, saint fascination, Schopenhauer/Wagner, philological caution) directly from the aphorism.
